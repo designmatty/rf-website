@@ -4,6 +4,9 @@
   "description": "A Jekyll demo site using Netlify CMS",
   "main": "gulpfile.js",
   "scripts": {
+    "build": "jekyll clean && gulp build",
+    "clean": "jekyll clean",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nicholas Stees",
@@ -26,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NickStees/jekyll-cms.git"
+    "url": "https://github.com/designmatty/rf-website.git"
   },
   "keywords": [
     "jekyll",
@@ -36,5 +39,5 @@
     "Netlify",
     "NetlifyCMS"
   ],
-  "homepage": "https://github.com/NickStees/jekyll-cms"
+  "homepage": "https://github.com/designmatty/rf-website"
 }

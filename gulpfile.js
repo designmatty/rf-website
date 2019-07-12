@@ -1,9 +1,3 @@
-// run the FOLLOWING BEFORE trying to run gulp
-// npm install gulp-cli -g
-// npm install gulp -D
-// npm install
-//
-
 var gulp = require("gulp");
 var browserSync = require("browser-sync").create();
 var sass = require("gulp-sass");
@@ -20,7 +14,7 @@ var babel = require("gulp-babel");
 
 var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 var messages = {
-  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
+  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
 /**
@@ -44,8 +38,8 @@ gulp.task("jekyll-rebuild", ["jekyll-build"], function() {
 gulp.task("browser-sync", ["jekyll-build", "sass", "bundle-js"], function() {
   browserSync.init({
     server: {
-      baseDir: "_site",
-    },
+      baseDir: "_site"
+    }
   });
 });
 
@@ -58,7 +52,7 @@ gulp.task("sass", function() {
     .pipe(
       sass({
         includePaths: ["scss"],
-        onError: browserSync.notify,
+        onError: browserSync.notify
       })
     )
     .pipe(postcss([mqpacker]))
@@ -70,7 +64,7 @@ gulp.task("sass", function() {
     .pipe(
       cleanCSS({
         compatibility: "ie9",
-        processImportFrom: ["!fonts.googleapis.com"],
+        processImportFrom: ["!fonts.googleapis.com"]
       })
     )
     .pipe(rename({ extname: ".min.css" }))
@@ -96,7 +90,7 @@ gulp.task("watch", function() {
       "_layouts/*.html",
       "_includes/*.html",
       "_posts/*",
-      "_data/*",
+      "_data/*"
     ],
     ["jekyll-rebuild"]
   );
@@ -112,7 +106,7 @@ gulp.task("bundle-js", function() {
     .pipe(gulp.dest("assets/js"))
     .pipe(
       babel({
-        presets: ["env"],
+        presets: ["env"]
       })
     )
     .pipe(uglify())
@@ -129,14 +123,14 @@ gulp.task("images", function() {
       "assets/_src_img/**/*.jpg",
       "assets/_src_img/**/*.gif",
       "assets/_src_img/**/*.jpeg",
-      "assets/_src_img/**/*.svg",
+      "assets/_src_img/**/*.svg"
     ])
     .pipe(
       imagemin({
         interlaced: true,
         progressive: true,
         optimizationLevel: 5,
-        svgoPlugins: [{ removeViewBox: true }],
+        svgoPlugins: [{ removeViewBox: true }]
       })
     )
     .pipe(gulp.dest("img"));
@@ -147,3 +141,9 @@ gulp.task("images", function() {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task("default", ["browser-sync", "watch"]);
+
+/**
+ * Build task, running just `gulp build` will compile the sass,
+ * compile the jekyll site, bundle javascript & optimize imagery.
+ */
+gulp.task("build", ["sass", "bundle-js", "images", "jekyll-build"]);
