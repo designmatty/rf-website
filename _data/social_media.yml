@@ -1,19 +1,10 @@
 platform:
-  - icon: fa-facebook
-    link: 'http://facebook.com/'
-    name: Facebook
-  - icon: fa-twitter
-    link: 'http://twitter.com/'
+  - icon: fab fa-twitter
+    link: "https://twitter.com/rasterfoundry"
     name: Twitter
-  - icon: fa-pinterest
-    link: 'http://pintrest.com/'
-    name: Pinterest
-  - icon: fa-dribbble
-    link: 'http://dribble.com/'
-    name: Dribbble
-  - icon: fa-behance
-    link: 'http://behance.com/'
-    name: Behance
-  - icon: fa-linkedin
-    link: 'http://linkedin.com/'
-    name: LinkedIn
+  - icon: fab fa-github
+    link: "https://github.com/raster-foundry/raster-foundry"
+    name: Github
+  - icon: fab fa-medium-m
+    link: "https://blog.rasterfoundry.com/"
+    name: Our blog

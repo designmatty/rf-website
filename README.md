@@ -24,11 +24,7 @@ After cloning the project
 
 - run `bundle install` to install gem dependencies
 - run `npm install` to install npm modules
-- run `gulp` to start live development
-
-  <!-- Markdown snippet -->
-
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NickStees/jekyll-cms)
+- run `npm run start` to start live development
 
 ## SCSS and JS
 

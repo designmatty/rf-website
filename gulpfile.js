@@ -87,6 +87,7 @@ gulp.task("watch", function() {
     [
       "*.md",
       "*.html",
+      "_pages/*.html",
       "_layouts/*.html",
       "_includes/*.html",
       "_posts/*",
@@ -101,7 +102,7 @@ gulp.task("watch", function() {
  */
 gulp.task("bundle-js", function() {
   return gulp
-    .src(["assets/js/vendor/modernizr-custom.js", "assets/js/main.js"])
+    .src(["assets/js/main.js"])
     .pipe(concat("bundle.js"))
     .pipe(gulp.dest("assets/js"))
     .pipe(

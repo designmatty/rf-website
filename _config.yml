@@ -1,4 +1,3 @@
-
 exclude:
   - "/vendor/"
   - "/node_modules/"
@@ -10,25 +9,24 @@ exclude:
   - "LICENSE.md"
   - "*.gemspec"
 
+include:
+  - _pages
+
 keep_files:
   - "CNAME"
   - ".git"
   - ".gitignore"
 
-
 # Site settings
-title: Jekyll Starter
+title: Raster Foundry
 subtitle: "A template to get started on"
-url: "" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+url: ""
 baseurl: ""
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
 
-# Sass is off loaded to gulp.js 
+# Sass is off loaded to gulp.js
 # sass:
 #     sass_dir: assets/_scss
 #     style: compressed

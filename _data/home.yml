@@ -1,20 +1,91 @@
-title: Jekyll with Netlify CMS
-subtitle: Static speed, with dynamic content
-intro-title: Editable Static Sites
-intro-subtitle: Update via a web UI
-intro-body: >-
-  Static sites are fast to get up and running and develop on. They are also **performance
-  beasts** but their biggest downside is non technical users editing content. Adding the
-  Netlify CMS to your Jekyll site means clients can update this site via a Web UI. It is
-  no wordpress or Drupal replacement, but gets the job done.
-intro-img: /uploads/8649856355_627bcdeadf_h.jpg
-feature-title: This is Editable!
-feature-subtitle: Even a complex layout like this is editable with the Netlify CMS, you won't be having client adjust the layout like [Gutenberg](https://wordpress.org/plugins/gutenberg/), but they can still keep things up to date!
-testimonial-title: We are the Best
-testimonial-subtitle: Even these complex icon graphics below can be updated
-hotels: '15'
-resturants: '25'
-museums: '100'
-minutes: '12'
-services-title: Service Offered
-services-subtitle: There is a service.yml that Netlify CMS can edit to change the below
+hero-title: Welcome to Raster Foundry
+hero-body: >-
+  We are a creative group <br>
+  of people who design <br>
+  influential brands and <br>
+  digital experiences.
+about-subtitle: Hello there
+about-title: We are Raster Foundry
+about-body: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+about-stats:
+  - stat-title: Another stat
+    stat-count: 123
+  - stat-title: Another stat
+    stat-count: 172
+  - stat-title: Another stat
+    stat-count: 1028
+  - stat-title: Another stat
+    stat-count: 2727
+capabilities-subtitle: What We Do
+capabilities-title: We've got everything you need to launch and grow your business
+capabilities:
+  - capability-title: Imagery management
+    capability-icon: far fa-database
+    capability-statement: >-
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+  - capability-title: Annotation
+    capability-icon: far fa-draw-square
+    capability-statement: >-
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+  - capability-title: Prediction & Discovery
+    capability-icon: far fa-lightbulb-on
+    capability-statement: >-
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+  - capability-title: Business intelligence
+    capability-icon: far fa-chart-bar
+    capability-statement: >-
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+  - capability-title: Raster Vision
+    capability-icon: far fa-eye
+    capability-statement: >-
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+  - capability-title: Geotrellis
+    capability-icon: far fa-sitemap
+    capability-statement: >-
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+industries-subtitle: Industries
+industries-title: We're putting our best foot forward with these industries
+industries:
+  - industry-title: Agriculture
+    industry-link: /#
+    industry-image: /assets/img/portfolio/lady-shutterbug.jpg
+    industry-image-alt: an image of ag
+  - industry-title: Utility management
+    industry-link: /#
+    industry-image: /assets/img/portfolio/woodcraft.jpg
+    industry-image-alt: an image of utility management
+  - industry-title: International development
+    industry-link: /#
+    industry-image: /assets/img/portfolio/the-beetle.jpg
+    industry-image-alt: an image of international dev
+clients-subtitle: Our clients
+clients-title: We have been honored to partner with these clients
+clients:
+  - client-name: Apple
+    client-logo: /assets/img/clients/apple.png
+  - client-name: Atom
+    client-logo: /assets/img/clients/atom.png
+  - client-name: Blackberry
+    client-logo: /assets/img/clients/blackberry.png
+  - client-name: Dropbox
+    client-logo: /assets/img/clients/dropbox.png
+  - client-name: Envato
+    client-logo: /assets/img/clients/envato.png
+  - client-name: Firefox
+    client-logo: /assets/img/clients/firefox.png
+  - client-name: Joomla
+    client-logo: /assets/img/clients/joomla.png
+  - client-name: Magento
+    client-logo: /assets/img/clients/magento.png
+testimonials:
+  - testimonial: >-
+      Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori. Excepturi nam cupiditate culpa doloremque deleniti repellat.
+    testimonial-name: Tim Cook
+    testimonial-position: CEO, Apple
+    testimonial-image: /assets/img/avatars/user-01.jpg
+  - testimonial: >-
+      Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
+    testimonial-name: Sundar Pichai
+    testimonial-position: CEO, Google
+    testimonial-image: /assets/img/avatars/user-05.jpg

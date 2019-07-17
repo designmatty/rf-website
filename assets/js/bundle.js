@@ -1,41 +1,434 @@
-/*! modernizr 3.5.0 (Custom Build) | MIT *
- * https://modernizr.com/download/?-audio-boxshadow-canvas-cssgrid_cssgridlegacy-flexbox-flexboxlegacy-localstorage-svg-touchevents-video-setclasses !*/
-!function(e,n,t){function o(e,n){return typeof e===n}function r(){var e,n,t,r,a,s,i;for(var l in T)if(T.hasOwnProperty(l)){if(e=[],n=T[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)s=e[a],i=s.split("."),1===i.length?Modernizr[i[0]]=r:(!Modernizr[i[0]]||Modernizr[i[0]]instanceof Boolean||(Modernizr[i[0]]=new Boolean(Modernizr[i[0]])),Modernizr[i[0]][i[1]]=r),w.push((r?"":"no-")+i.join("-"))}}function a(e){var n=b.className,t=Modernizr._config.classPrefix||"";if(C&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),C?b.className.baseVal=n:b.className=n)}function s(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):C?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function i(){var e=n.body;return e||(e=s(C?"svg":"body"),e.fake=!0),e}function l(e,t,o,r){var a,l,c,u,d="modernizr",p=s("div"),f=i();if(parseInt(o,10))for(;o--;)c=s("div"),c.id=r?r[o]:d+(o+1),p.appendChild(c);return a=s("style"),a.type="text/css",a.id="s"+d,(f.fake?f:p).appendChild(a),f.appendChild(p),a.styleSheet?a.styleSheet.cssText=e:a.appendChild(n.createTextNode(e)),p.id=d,f.fake&&(f.style.background="",f.style.overflow="hidden",u=b.style.overflow,b.style.overflow="hidden",b.appendChild(f)),l=t(p,e),f.fake?(f.parentNode.removeChild(f),b.style.overflow=u,b.offsetHeight):p.parentNode.removeChild(p),!!l}function c(e,n){return!!~(""+e).indexOf(n)}function u(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function d(e,n){return function(){return e.apply(n,arguments)}}function p(e,n,t){var r;for(var a in e)if(e[a]in n)return t===!1?e[a]:(r=n[e[a]],o(r,"function")?d(r,t||n):r);return!1}function f(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function m(n,t,o){var r;if("getComputedStyle"in e){r=getComputedStyle.call(e,n,t);var a=e.console;if(null!==r)o&&(r=r.getPropertyValue(o));else if(a){var s=a.error?"error":"log";a[s].call(a,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else r=!t&&n.currentStyle&&n.currentStyle[o];return r}function y(n,o){var r=n.length;if("CSS"in e&&"supports"in e.CSS){for(;r--;)if(e.CSS.supports(f(n[r]),o))return!0;return!1}if("CSSSupportsRule"in e){for(var a=[];r--;)a.push("("+f(n[r])+":"+o+")");return a=a.join(" or "),l("@supports ("+a+") { #modernizr { position: absolute; } }",function(e){return"absolute"==m(e,null,"position")})}return t}function v(e,n,r,a){function i(){d&&(delete N.style,delete N.modElem)}if(a=o(a,"undefined")?!1:a,!o(r,"undefined")){var l=y(e,r);if(!o(l,"undefined"))return l}for(var d,p,f,m,v,g=["modernizr","tspan","samp"];!N.style&&g.length;)d=!0,N.modElem=s(g.shift()),N.style=N.modElem.style;for(f=e.length,p=0;f>p;p++)if(m=e[p],v=N.style[m],c(m,"-")&&(m=u(m)),N.style[m]!==t){if(a||o(r,"undefined"))return i(),"pfx"==n?m:!0;try{N.style[m]=r}catch(h){}if(N.style[m]!=v)return i(),"pfx"==n?m:!0}return i(),!1}function g(e,n,t,r,a){var s=e.charAt(0).toUpperCase()+e.slice(1),i=(e+" "+E.join(s+" ")+s).split(" ");return o(n,"string")||o(n,"undefined")?v(i,n,r,a):(i=(e+" "+z.join(s+" ")+s).split(" "),p(i,n,t))}function h(e,n,o){return g(e,t,t,n,o)}var w=[],T=[],x={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){T.push({name:e,fn:n,options:t})},addAsyncTest:function(e){T.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=x,Modernizr=new Modernizr,Modernizr.addTest("svg",!!n.createElementNS&&!!n.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect),Modernizr.addTest("localstorage",function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(n){return!1}});var b=n.documentElement,C="svg"===b.nodeName.toLowerCase();Modernizr.addTest("canvas",function(){var e=s("canvas");return!(!e.getContext||!e.getContext("2d"))}),Modernizr.addTest("video",function(){var e=s("video"),n=!1;try{n=!!e.canPlayType,n&&(n=new Boolean(n),n.ogg=e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),n.h264=e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),n.webm=e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,""),n.vp9=e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/,""),n.hls=e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/,""))}catch(t){}return n}),Modernizr.addTest("audio",function(){var e=s("audio"),n=!1;try{n=!!e.canPlayType,n&&(n=new Boolean(n),n.ogg=e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/,""),n.mp3=e.canPlayType('audio/mpeg; codecs="mp3"').replace(/^no$/,""),n.opus=e.canPlayType('audio/ogg; codecs="opus"')||e.canPlayType('audio/webm; codecs="opus"').replace(/^no$/,""),n.wav=e.canPlayType('audio/wav; codecs="1"').replace(/^no$/,""),n.m4a=(e.canPlayType("audio/x-m4a;")||e.canPlayType("audio/aac;")).replace(/^no$/,""))}catch(t){}return n});var S=x._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];x._prefixes=S;var P=x.testStyles=l;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var o=["@media (",S.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");P(o,function(e){t=9===e.offsetTop})}return t});var _="Moz O ms Webkit",E=x._config.usePrefixes?_.split(" "):[];x._cssomPrefixes=E;var z=x._config.usePrefixes?_.toLowerCase().split(" "):[];x._domPrefixes=z;var $={elem:s("modernizr")};Modernizr._q.push(function(){delete $.elem});var N={style:$.elem.style};Modernizr._q.unshift(function(){delete N.style}),x.testAllProps=g,x.testAllProps=h,Modernizr.addTest("boxshadow",h("boxShadow","1px 1px",!0)),Modernizr.addTest("cssgridlegacy",h("grid-columns","10px",!0)),Modernizr.addTest("cssgrid",h("grid-template-rows","none",!0)),Modernizr.addTest("flexbox",h("flexBasis","1px",!0)),Modernizr.addTest("flexboxlegacy",h("boxDirection","reverse",!0)),r(),a(w),delete x.addTest,delete x.addAsyncTest;for(var j=0;j<Modernizr._q.length;j++)Modernizr._q[j]();e.Modernizr=Modernizr}(window,document);
-$(document).ready(function() {
+/* ===================================================================
+ * Glint - Main JS
+ *
+ * ------------------------------------------------------------------- */
 
-  // Get Next Rocket Launch
-  if ($('#next-launch').length) {
-    // get latest rocket launch data from API
-    $.get("https://launchlibrary.net/1.2/launch/next/1", function(data) {
-      var launch = data.launches[0];
-      var html = '<h1><i class="fa fa-rocket" aria-hidden="true"></i> ' + launch.name + '</h1>';
-      html += '<strong>' + launch.windowstart + ' - ' + launch.windowend + '</strong>';
-      html += '<small class="pull-right">' + launch.location.pads[0].agencies[0].name + '</small>';
-      html += '<hr><p>' + launch.missions[0].description + '</p>';
-      $('#next-launch').html(html);
-    });
-  }
+(function($) {
+  "use strict";
 
-  // ##### Optional Libraries that may not be on every page
-  // if check for pages that may optionally have this
-  if ($('.dataTable').length) {
-    $('.dataTable').DataTable();
-  }
-  // owlCarousel
-  if ($("#testimonial-slider").length) {
-    $("#testimonial-slider").owlCarousel({
-      paginationSpeed: 500,
-      singleItem: true,
-      autoPlay: 3000,
-    });
-  }
-  if ($("#clients-logo").length) {
-    $("#clients-logo").owlCarousel({
-      autoPlay: 3000,
-      items: 5,
-      itemsDesktop: [1199, 5],
-      itemsDesktopSmall: [979, 5],
-    });
-  }
+  var cfg = {
+      scrollDuration: 800, // smoothscroll duration
+      mailChimpURL:
+        "https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc" // mailchimp url
+    },
+    $WIN = $(window);
 
-});
+  // Add the User Agent to the <html>
+  // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
+  var doc = document.documentElement;
+  doc.setAttribute("data-useragent", navigator.userAgent);
+
+  /* Preloader
+   * -------------------------------------------------- */
+  var clPreloader = function() {
+    $("html").addClass("cl-preload");
+
+    $WIN.on("load", function() {
+      //force page scroll position to top at page refresh
+      // $('html, body').animate({ scrollTop: 0 }, 'normal');
+
+      // will first fade out the loading animation
+      $("#loader").fadeOut("slow", function() {
+        // will fade out the whole DIV that covers the website.
+        $("#preloader")
+          .delay(300)
+          .fadeOut("slow");
+      });
+
+      // for hero content animations
+      $("html").removeClass("cl-preload");
+      $("html").addClass("cl-loaded");
+    });
+  };
+
+  /* Menu on Scrolldown
+   * ------------------------------------------------------ */
+  var clMenuOnScrolldown = function() {
+    var menuTrigger = $(".header-menu-toggle");
+
+    $WIN.on("scroll", function() {
+      if ($WIN.scrollTop() > 150) {
+        menuTrigger.addClass("opaque");
+      } else {
+        menuTrigger.removeClass("opaque");
+      }
+    });
+  };
+
+  /* OffCanvas Menu
+   * ------------------------------------------------------ */
+  var clOffCanvas = function() {
+    var menuTrigger = $(".header-menu-toggle"),
+      nav = $(".header-nav"),
+      closeButton = nav.find(".header-nav__close"),
+      siteBody = $("body"),
+      mainContents = $("section, footer");
+
+    // open-close menu by clicking on the menu icon
+    menuTrigger.on("click", function(e) {
+      e.preventDefault();
+      // menuTrigger.toggleClass('is-clicked');
+      siteBody.toggleClass("menu-is-open");
+    });
+
+    // close menu by clicking the close button
+    closeButton.on("click", function(e) {
+      e.preventDefault();
+      menuTrigger.trigger("click");
+    });
+
+    // close menu clicking outside the menu itself
+    siteBody.on("click", function(e) {
+      if (
+        !$(e.target).is(
+          ".header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span"
+        )
+      ) {
+        // menuTrigger.removeClass('is-clicked');
+        siteBody.removeClass("menu-is-open");
+      }
+    });
+  };
+
+  /* photoswipe
+   * ----------------------------------------------------- */
+  var clPhotoswipe = function() {
+    var items = [],
+      $pswp = $(".pswp")[0],
+      $folioItems = $(".item-folio");
+
+    // get items
+    $folioItems.each(function(i) {
+      var $folio = $(this),
+        $thumbLink = $folio.find(".thumb-link"),
+        $title = $folio.find(".item-folio__title"),
+        $caption = $folio.find(".item-folio__caption"),
+        $titleText = "<h4>" + $.trim($title.html()) + "</h4>",
+        $captionText = $.trim($caption.html()),
+        $href = $thumbLink.attr("href"),
+        $size = $thumbLink.data("size").split("x"),
+        $width = $size[0],
+        $height = $size[1];
+
+      var item = {
+        src: $href,
+        w: $width,
+        h: $height
+      };
+
+      if ($caption.length > 0) {
+        item.title = $.trim($titleText + $captionText);
+      }
+
+      items.push(item);
+    });
+
+    // bind click event
+    $folioItems.each(function(i) {
+      $(this).on("click", function(e) {
+        e.preventDefault();
+        var options = {
+          index: i,
+          showHideOpacity: true
+        };
+
+        // initialize PhotoSwipe
+        var lightBox = new PhotoSwipe(
+          $pswp,
+          PhotoSwipeUI_Default,
+          items,
+          options
+        );
+        lightBox.init();
+      });
+    });
+  };
+
+  /* Stat Counter
+   * ------------------------------------------------------ */
+  var clStatCount = function() {
+    var statSection = $(".about-stats"),
+      stats = $(".stats__count");
+
+    statSection.waypoint({
+      handler: function(direction) {
+        if (direction === "down") {
+          stats.each(function() {
+            var $this = $(this);
+
+            $({ Counter: 0 }).animate(
+              { Counter: $this.text() },
+              {
+                duration: 4000,
+                easing: "swing",
+                step: function(curValue) {
+                  $this.text(Math.ceil(curValue));
+                }
+              }
+            );
+          });
+        }
+
+        // trigger once only
+        this.destroy();
+      },
+
+      offset: "90%"
+    });
+  };
+
+  /* Masonry
+   * ---------------------------------------------------- */
+
+  var clMasonryFolio = function() {
+    var containerBricks = $(".masonry");
+
+    containerBricks.imagesLoaded(function() {
+      containerBricks.masonry({
+        itemSelector: ".masonry__brick",
+        resize: true
+      });
+    });
+  };
+
+  /* slick slider
+   * ------------------------------------------------------ */
+  var clSlickSlider = function() {
+    $(".clients").slick({
+      arrows: false,
+      dots: true,
+      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 2,
+      //autoplay: true,
+      pauseOnFocus: false,
+      autoplaySpeed: 1000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 5
+          }
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
+    });
+
+    $(".testimonials").slick({
+      arrows: true,
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      pauseOnFocus: false,
+      autoplaySpeed: 1500,
+      responsive: [
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
+    });
+  };
+
+  /* Smooth Scrolling
+   * ------------------------------------------------------ */
+  var clSmoothScroll = function() {
+    $(".smoothscroll").on("click", function(e) {
+      var target = this.hash,
+        $target = $(target);
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            scrollTop: $target.offset().top
+          },
+          cfg.scrollDuration,
+          "swing"
+        )
+        .promise()
+        .done(function() {
+          // check if menu is open
+          if ($("body").hasClass("menu-is-open")) {
+            $(".header-menu-toggle").trigger("click");
+          }
+
+          window.location.hash = target;
+        });
+    });
+  };
+
+  /* Placeholder Plugin Settings
+   * ------------------------------------------------------ */
+  var clPlaceholder = function() {
+    $("input, textarea, select").placeholder();
+  };
+
+  /* Alert Boxes
+   * ------------------------------------------------------ */
+  var clAlertBoxes = function() {
+    $(".alert-box").on("click", ".alert-box__close", function() {
+      $(this)
+        .parent()
+        .fadeOut(500);
+    });
+  };
+
+  /* Contact Form
+   * ------------------------------------------------------ */
+  var clContactForm = function() {
+    /* local validation */
+    $("#contactForm").validate({
+      /* submit via ajax */
+      submitHandler: function(form) {
+        var sLoader = $(".submit-loader");
+
+        $.ajax({
+          type: "POST",
+          url: "inc/sendEmail.php",
+          data: $(form).serialize(),
+          beforeSend: function() {
+            sLoader.slideDown("slow");
+          },
+          success: function(msg) {
+            // Message was sent
+            if (msg == "OK") {
+              sLoader.slideUp("slow");
+              $(".message-warning").fadeOut();
+              $("#contactForm").fadeOut();
+              $(".message-success").fadeIn();
+            }
+            // There was an error
+            else {
+              sLoader.slideUp("slow");
+              $(".message-warning").html(msg);
+              $(".message-warning").slideDown("slow");
+            }
+          },
+          error: function() {
+            sLoader.slideUp("slow");
+            $(".message-warning").html(
+              "Something went wrong. Please try again."
+            );
+            $(".message-warning").slideDown("slow");
+          }
+        });
+      }
+    });
+  };
+
+  /* Animate On Scroll
+   * ------------------------------------------------------ */
+  var clAOS = function() {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 300,
+      once: true,
+      disable: "mobile"
+    });
+  };
+
+  /* AjaxChimp
+   * ------------------------------------------------------ */
+  var clAjaxChimp = function() {
+    $("#mc-form").ajaxChimp({
+      language: "es",
+      url: cfg.mailChimpURL
+    });
+
+    // Mailchimp translation
+    //
+    //  Defaults:
+    //	 'submit': 'Submitting...',
+    //  0: 'We have sent you a confirmation email',
+    //  1: 'Please enter a value',
+    //  2: 'An email address must contain a single @',
+    //  3: 'The domain portion of the email address is invalid (the portion after the @: )',
+    //  4: 'The username portion of the email address is invalid (the portion before the @: )',
+    //  5: 'This email address looks fake or invalid. Please enter a real email address'
+
+    $.ajaxChimp.translations.es = {
+      submit: "Submitting...",
+      0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
+      1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
+      2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+      3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+      4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+      5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
+    };
+  };
+
+  /* Back to Top
+   * ------------------------------------------------------ */
+  var clBackToTop = function() {
+    var pxShow = 500, // height on which the button will show
+      fadeInTime = 400, // how slow/fast you want the button to show
+      fadeOutTime = 400, // how slow/fast you want the button to hide
+      scrollSpeed = 300, // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+      goTopButton = $(".go-top");
+
+    // Show or hide the sticky footer button
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() >= pxShow) {
+        goTopButton.fadeIn(fadeInTime);
+      } else {
+        goTopButton.fadeOut(fadeOutTime);
+      }
+    });
+  };
+
+  /* Initialize
+   * ------------------------------------------------------ */
+  (function ssInit() {
+    clPreloader();
+    clMenuOnScrolldown();
+    clOffCanvas();
+    //clPhotoswipe();
+    clStatCount();
+    //clMasonryFolio();
+    clSlickSlider();
+    clSmoothScroll();
+    clPlaceholder();
+    clAlertBoxes();
+    clContactForm();
+    clAOS();
+    clAjaxChimp();
+    clBackToTop();
+  })();
+})(jQuery);

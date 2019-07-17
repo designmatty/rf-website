@@ -1,7 +1,7 @@
 {
-  "name": "jekyll-cms",
+  "name": "raster-foundry-website",
   "version": "0.1.0",
-  "description": "A Jekyll demo site using Netlify CMS",
+  "description": "Raster Foundry Jekyll site using Netlify CMS",
   "main": "gulpfile.js",
   "scripts": {
     "build": "jekyll clean && gulp build",
@@ -9,7 +9,7 @@
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nicholas Stees",
+  "author": "Azavea",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
