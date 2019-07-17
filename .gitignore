@@ -31,3 +31,7 @@ $RECYCLE.BIN/
 ### NPM ###
 node_modules/
 npm-debug.log
+
+## Generated files
+./assets/css/main*.css
+./assets/js/bundle*.css

@@ -2113,7 +2113,6 @@ html, body {
   height: 100%; }
 
 body {
-  background: #111111;
   font-family: "lora", serif;
   font-size: 1.7rem;
   font-style: normal;
@@ -4421,6 +4420,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 footer {
+  background: #111;
   padding: 9rem 0 6rem;
   font-family: "montserrat", sans-serif;
   font-weight: 300;

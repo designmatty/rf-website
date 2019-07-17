@@ -2,10 +2,15 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
+publish_mode: editorial_workflow
+show_preview_links: true
 media_folder: "uploads" # Media files will be stored in the repo under images/uploads
 collections:
   - label: "Global"
     name: "global"
+    delete: false
+    editor:
+      preview: false
     files:
       - label: "Social Media"
         name: "social"
@@ -20,6 +25,9 @@ collections:
               - { label: Link, name: link, widget: string }
   - label: "Pages"
     name: "home"
+    delete: false
+    editor:
+      preview: false
     files:
       - label: "Home Page"
         name: "home"
@@ -31,8 +39,8 @@ collections:
           - { label: About title, name: about-title, widget: string }
           - { label: About body, name: about-body, widget: text }
           - { label: About subtitle, name: about-subtitle, widget: string }
-          - label: About stats,
-            name: about-stats,
+          - label: "About stats"
+            name: "about-stats"
             widget: "list"
             fields:
               - { label: Stat title, name: stat-title, widget: string }
@@ -47,8 +55,8 @@ collections:
               name: capabilities-title,
               widget: string,
             }
-          - label: capabilities,
-            name: capabilities,
+          - label: "capabilities"
+            name: "capabilities"
             widget: "list"
             fields:
               - {
@@ -72,8 +80,8 @@ collections:
               widget: string,
             }
           - { label: industries title, name: industries-title, widget: string }
-          - label: industries,
-            name: industries,
+          - label: "industries"
+            name: "industries"
             widget: "list"
             fields:
               - { label: industry title, name: industry-title, widget: string }
@@ -91,8 +99,8 @@ collections:
                 }
           - { label: clients subtitle, name: clients-subtitle, widget: string }
           - { label: clients title, name: clients-title, widget: string }
-          - label: clients,
-            name: clients,
+          - label: "clients"
+            name: "clients"
             widget: "list"
             fields:
               - { label: client name, name: client-name, widget: string }
@@ -102,8 +110,8 @@ collections:
                   widget: image,
                   allow_multiple: false,
                 }
-          - label: testimonials,
-            name: testimonials,
+          - label: "testimonials"
+            name: "testimonials"
             widget: "list"
             fields:
               - { label: testimonial, name: testimonial, widget: text }
