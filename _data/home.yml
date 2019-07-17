@@ -1,91 +1,117 @@
 hero-title: Welcome to Raster Foundry
 hero-body: >-
-  We are a creative group <br>
-  of people who design <br>
-  influential brands and <br>
-  digital experiences.
+  We are a creative group <br> of people who design <br> influential brands and
+  <br> digital experiences.
 about-subtitle: Hello there
 about-title: We are Raster Foundry
 about-body: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt.
 about-stats:
-  - stat-title: Another stat
-    stat-count: 123
-  - stat-title: Another stat
-    stat-count: 172
-  - stat-title: Another stat
-    stat-count: 1028
-  - stat-title: Another stat
-    stat-count: 2727
+  - stat-count: 123
+    stat-title: Another stat
+  - stat-count: 172
+    stat-title: Another stat
+  - stat-count: 1028
+    stat-title: Another stat
+  - stat-count: 2727
+    stat-title: Another stat
 capabilities-subtitle: What We Do
 capabilities-title: We've got everything you need to launch and grow your business
 capabilities:
-  - capability-title: Imagery management
-    capability-icon: far fa-database
+  - capability-icon: far fa-database
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-  - capability-title: Annotation
-    capability-icon: far fa-draw-square
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
+      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
+      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
+      esse soluta sint.
+    capability-title: Imagery management
+  - capability-icon: far fa-draw-square
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-  - capability-title: Prediction & Discovery
-    capability-icon: far fa-lightbulb-on
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
+      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
+      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
+      esse soluta sint.
+    capability-title: Annotation
+  - capability-icon: far fa-lightbulb-on
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-  - capability-title: Business intelligence
-    capability-icon: far fa-chart-bar
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
+      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
+      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
+      esse soluta sint.
+    capability-title: Prediction & Discovery
+  - capability-icon: far fa-chart-bar
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-  - capability-title: Raster Vision
-    capability-icon: far fa-eye
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
+      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
+      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
+      esse soluta sint.
+    capability-title: Business intelligence
+  - capability-icon: far fa-eye
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-  - capability-title: Geotrellis
-    capability-icon: far fa-sitemap
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
+      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
+      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
+      esse soluta sint.
+    capability-title: Raster Vision
+  - capability-icon: far fa-sitemap
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
+      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
+      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
+      esse soluta sint.
+    capability-title: Geotrellis
 industries-subtitle: Industries
 industries-title: We're putting our best foot forward with these industries
 industries:
-  - industry-title: Agriculture
-    industry-link: /#
-    industry-image: /assets/img/portfolio/lady-shutterbug.jpg
+  - industry-image: /assets/img/portfolio/lady-shutterbug.jpg
     industry-image-alt: an image of ag
-  - industry-title: Utility management
-    industry-link: /#
-    industry-image: /assets/img/portfolio/woodcraft.jpg
+    industry-link: '/#'
+    industry-title: Agriculture
+  - industry-image: /assets/img/portfolio/woodcraft.jpg
     industry-image-alt: an image of utility management
-  - industry-title: International development
-    industry-link: /#
-    industry-image: /assets/img/portfolio/the-beetle.jpg
+    industry-link: '/#'
+    industry-title: Utility management
+  - industry-image: /assets/img/portfolio/the-beetle.jpg
     industry-image-alt: an image of international dev
+    industry-link: '/#'
+    industry-title: International development
 clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
 clients:
-  - client-name: Apple
-    client-logo: /assets/img/clients/apple.png
-  - client-name: Atom
-    client-logo: /assets/img/clients/atom.png
-  - client-name: Blackberry
-    client-logo: /assets/img/clients/blackberry.png
-  - client-name: Dropbox
-    client-logo: /assets/img/clients/dropbox.png
-  - client-name: Envato
-    client-logo: /assets/img/clients/envato.png
-  - client-name: Firefox
-    client-logo: /assets/img/clients/firefox.png
-  - client-name: Joomla
-    client-logo: /assets/img/clients/joomla.png
-  - client-name: Magento
-    client-logo: /assets/img/clients/magento.png
+  - client-logo: /assets/img/clients/apple.png
+    client-name: Apple
+  - client-logo: /assets/img/clients/atom.png
+    client-name: Atom
+  - client-logo: /assets/img/clients/blackberry.png
+    client-name: Blackberry
+  - client-logo: /assets/img/clients/dropbox.png
+    client-name: Dropbox
+  - client-logo: /assets/img/clients/envato.png
+    client-name: Envato
+  - client-logo: /assets/img/clients/firefox.png
+    client-name: Firefox
+  - client-logo: /assets/img/clients/joomla.png
+    client-name: Joomla
+  - client-logo: /assets/img/clients/magento.png
+    client-name: Magento
 testimonials:
   - testimonial: >-
-      Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori. Excepturi nam cupiditate culpa doloremque deleniti repellat.
-    testimonial-name: Tim Cook
-    testimonial-position: CEO, Apple
+      Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam
+      accusantium ipsum. Laudantium quia consequatur molestias delectus culpa
+      facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
+      Excepturi nam cupiditate culpa doloremque deleniti repellat.
     testimonial-image: /assets/img/avatars/user-01.jpg
+    testimonial-name: Tim Cook
+    testimonial-position: 'CEO, Apple'
   - testimonial: >-
-      Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
-    testimonial-name: Sundar Pichai
-    testimonial-position: CEO, Google
+      Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos
+      repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas
+      eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
     testimonial-image: /assets/img/avatars/user-05.jpg
+    testimonial-name: Sundar Pichai
+    testimonial-position: 'CEO, Google'
