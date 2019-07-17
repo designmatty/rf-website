@@ -33,5 +33,5 @@ node_modules/
 npm-debug.log
 
 ## Generated files
-./assets/css/main*.css
-./assets/js/bundle*.css
+assets/css/main.*
+assets/js/bundle.*
