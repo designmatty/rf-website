@@ -68,7 +68,7 @@ capabilities:
 industries-subtitle: Industries
 industries-title: We're putting our best foot forward with these industries
 industries:
-  - industry-image: /assets/img/portfolio/lady-shutterbug.jpg
+  - industry-image: /uploads/rf-cover1.jpg
     industry-image-alt: an image of ag
     industry-link: '/#'
     industry-title: Agriculture
