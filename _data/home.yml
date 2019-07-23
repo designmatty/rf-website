@@ -12,12 +12,12 @@ about-body: >-
   on the web. It utilizes open source libraries like Geotrellis and Raster
   Vision to give customers maximum flexibility and analysis capabilities.
 about-stats:
-  - stat-count: 123
-    stat-title: Another stat
-  - stat-count: 172
-    stat-title: Another stat
-  - stat-count: 1028
-    stat-title: Another stat
+  - stat-count: 30
+    stat-title: million image tiles visualized in 2019
+  - stat-count: 3
+    stat-title: million $ of research
+  - stat-count: 10
+    stat-title: Free data sources
   - stat-count: 2727
     stat-title: Another stat
 capabilities-subtitle: What We Do
