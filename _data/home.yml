@@ -14,8 +14,8 @@ about-body: >-
 about-stats:
   - stat-count: 30000000
     stat-title: tiles visualized in '19
-  - stat-count: 3
-    stat-title: million $ of research
+  - stat-count: 3000000
+    stat-title: $ of research
   - stat-count: 10
     stat-title: Free data sources
   - stat-count: 2727
