@@ -21,7 +21,7 @@ about-stats:
   - stat-count: 2727
     stat-title: '???'
 capabilities-subtitle: What We Do
-capabilities-title: We've got everything you need to launch and grow your business
+capabilities-title: We've got everything you need to manage and analyze your imagery
 capabilities:
   - capability-icon: far fa-database
     capability-statement: >-
