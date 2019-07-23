@@ -1,16 +1,16 @@
 hero-title: Welcome to Raster Foundry
 hero-body: >-
-  We are a dedicated group <br> of people who design <br> influential brands and
-  <br> digital experiences.
+  We help companies <br> use satellite and aerial imagery <br> to make the
+  world<br> a better place.
 about-subtitle: Hi there
 about-title: We are Raster Foundry
 about-body: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt.
+  Raster Foundry enables companies using earth observation imagery to organize
+  vast quantities of data, create custom analyses, and use machine learning
+  techniques to extract insights. At its core, Raster Foundry is an open source
+  tool, based on years of research into processing large scale geospatial data
+  on the web. It utilizes open source libraries like Geotrellis and Raster
+  Vision to give customers maximum flexibility and analysis capabilities.
 about-stats:
   - stat-count: 123
     stat-title: Another stat
