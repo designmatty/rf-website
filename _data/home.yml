@@ -40,10 +40,10 @@ capabilities:
     capability-title: Annotation
   - capability-icon: far fa-lightbulb-on
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
-      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
-      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
-      esse soluta sint.
+      Using Raster Vision, our open source library for applying computer vision
+      and machine learning techniques to Earth observation imagery, Raster
+      Foundry can perform object detection, chip classification, semantic and
+      instance segmentation operations.
     capability-title: Prediction & Discovery
   - capability-icon: far fa-chart-bar
     capability-statement: >-
