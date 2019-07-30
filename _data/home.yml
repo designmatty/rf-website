@@ -18,8 +18,6 @@ about-stats:
     stat-title: $m of research
   - stat-count: 10
     stat-title: Free data sources
-  - stat-count: 2727
-    stat-title: '???'
 capabilities-subtitle: What We Do
 capabilities-title: We've got everything you need to manage and analyze your imagery
 capabilities:
@@ -84,21 +82,21 @@ clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
 clients:
   - client-logo: /assets/img/clients/apple.png
-    client-name: Apple
+    client-name: World Bank
   - client-logo: /assets/img/clients/atom.png
-    client-name: Atom
+    client-name: Army Corps of Engineers
   - client-logo: /assets/img/clients/blackberry.png
-    client-name: Blackberry
+    client-name: Inter-American Development Bank
   - client-logo: /assets/img/clients/dropbox.png
-    client-name: Dropbox
+    client-name: Farmers Edge
   - client-logo: /assets/img/clients/envato.png
-    client-name: Envato
+    client-name: Philadelphia Water Department
   - client-logo: /assets/img/clients/firefox.png
-    client-name: Firefox
+    client-name: American Water (?)
   - client-logo: /assets/img/clients/joomla.png
-    client-name: Joomla
+    client-name: The Nature Conservancy
   - client-logo: /assets/img/clients/magento.png
-    client-name: Magento
+    client-name: United Nations
 testimonials:
   - testimonial: >-
       Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam
