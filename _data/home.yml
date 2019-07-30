@@ -18,22 +18,25 @@ about-stats:
     stat-title: $m of research
   - stat-count: 10
     stat-title: Free data sources
+  - stat-count: 45
+    stat-title: Talented engineers
 capabilities-subtitle: What We Do
 capabilities-title: We've got everything you need to manage and analyze your imagery
 capabilities:
   - capability-icon: far fa-database
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
-      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
-      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
-      esse soluta sint.
+      Our customers upload thousands of images per day. Raster Foundry allows
+      them to process remotely sensed data rapidly to support ecosystems
+      monitoring, change detection, and other long-range planning activities
     capability-title: Imagery management
   - capability-icon: far fa-draw-square
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
-      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
-      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
-      esse soluta sint.
+      The biggest obstacle to leveraging machine learning is the absence of
+      training data. Using our  Annotate tool, our clients can label and
+      validate images quickly, and manage large queues of annotation and
+      validation tasks. They can also verify the machine learning models
+      findings to improve performance. No capacity to label data? No problem -
+      our team can do that too.
     capability-title: Annotation
   - capability-icon: far fa-lightbulb-on
     capability-statement: >-
