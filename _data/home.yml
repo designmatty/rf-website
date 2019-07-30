@@ -26,8 +26,8 @@ capabilities:
   - capability-icon: far fa-database
     capability-statement: >-
       Our customers upload thousands of images per day. Raster Foundry allows
-      them to process remotely sensed data rapidly to support ecosystems
-      monitoring, change detection, and other long-range planning activities
+      them to process remotely sensed data rapidly to create maps and custom
+      analysis seamlessly.    
     capability-title: Imagery management
   - capability-icon: far fa-draw-square
     capability-statement: >-
@@ -43,7 +43,8 @@ capabilities:
       Using Raster Vision, our open source library for applying computer vision
       and machine learning techniques to Earth observation imagery, Raster
       Foundry can perform object detection, chip classification, semantic and
-      instance segmentation operations.
+      instance segmentation operations. Our clients have used these techniques
+      to monitor assets, ensure quality, and detect change. 
     capability-title: Prediction & Discovery
   - capability-icon: far fa-chart-bar
     capability-statement: >-
