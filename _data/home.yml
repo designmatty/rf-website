@@ -7,10 +7,12 @@ about-title: We are Raster Foundry
 about-body: >-
   Raster Foundry enables companies using earth observation imagery to organize
   vast quantities of data, create custom analyses, and use machine learning
-  techniques to extract insights. At its core, Raster Foundry is an open source
-  tool, based on years of research into processing large scale geospatial data
-  on the web. It utilizes open source libraries like Geotrellis and Raster
-  Vision to give customers maximum flexibility and analysis capabilities.
+  techniques to extract insights. Our customers leverage our expertise to
+  monitor physical assets to ensure long-term maintenance and protection and
+  detect changes in the natural environment, both at home and abroad. At its
+  core, Raster Foundry is an open source tool based on years of research and
+  gives customers the greatest analysis capabilities without sacrificing
+  performance.
 about-stats:
   - stat-count: 3
     stat-title: days for model development
@@ -43,8 +45,7 @@ capabilities:
       Using Raster Vision, our open source library for applying computer vision
       and machine learning techniques to Earth observation imagery, Raster
       Foundry can perform object detection, chip classification, semantic and
-      instance segmentation operations. Our clients have used these techniques
-      to monitor assets, ensure quality, and detect change. 
+      instance segmentation operations. 
     capability-title: Prediction & Discovery
   - capability-icon: far fa-chart-bar
     capability-statement: >-
