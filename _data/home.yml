@@ -61,10 +61,8 @@ capabilities:
     capability-title: Raster Vision
   - capability-icon: far fa-sitemap
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
-      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
-      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
-      esse soluta sint.
+      The foundation of Raster Foundry is GeoTrellis, Azavea's open source
+      geographic data processing engine for high performance applications.
     capability-title: Geotrellis
 industries-subtitle: Industries
 industries-title: We're putting our best foot forward with these industries
