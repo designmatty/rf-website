@@ -48,17 +48,16 @@ capabilities:
     capability-title: Prediction & Discovery
   - capability-icon: far fa-chart-bar
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
-      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
-      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
-      esse soluta sint.
-    capability-title: Business intelligence
+      We've built custom internal business process applications for some of our
+      larger clients. We serve as consultants and long-term maintainers for
+      some.
+    capability-title: Business process
   - capability-icon: far fa-eye
     capability-statement: >-
-      Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum
-      laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut.
-      Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora
-      esse soluta sint.
+      We've developed this machine learning focused open source library and
+      intend to maintain it in the long-term. As new research problems arise, we
+      aim to update the library with the components necessary to address them,
+      enabling us to remain on the cutting edge of this technology.
     capability-title: Raster Vision
   - capability-icon: far fa-sitemap
     capability-statement: >-
