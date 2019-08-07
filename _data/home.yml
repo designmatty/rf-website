@@ -53,7 +53,9 @@ capabilities:
       larger clients. We serve as trusted consultants and long-term maintainers.
     capability-title: Business process
 industries-subtitle: Industries
-industries-title: We're putting our best foot forward with these industries
+industries-title: >-
+  We've helped these industries leverage new technologies and the explosion of
+  available data and imagery
 industries:
   - industry-image: /uploads/rf-cover1.jpg
     industry-image-alt: an image of ag
