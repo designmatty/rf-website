@@ -52,18 +52,6 @@ capabilities:
       We've built custom internal business process applications for some of our
       larger clients. We serve as trusted consultants and long-term maintainers.
     capability-title: Business process
-  - capability-icon: far fa-eye
-    capability-statement: >-
-      We've developed this machine learning focused open source library and
-      intend to maintain it in the long-term. As new research problems arise, we
-      aim to update the library with the components necessary to address them,
-      enabling us to remain on the cutting edge of this technology.
-    capability-title: Raster Vision
-  - capability-icon: far fa-sitemap
-    capability-statement: >-
-      The foundation of Raster Foundry is GeoTrellis, Azavea's open source
-      geographic data processing engine for high performance applications.
-    capability-title: Geotrellis
 industries-subtitle: Industries
 industries-title: We're putting our best foot forward with these industries
 industries:
