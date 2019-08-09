@@ -9,10 +9,7 @@ about-body: >-
   vast quantities of data, create custom analyses, and use machine learning
   techniques to extract insights. Our customers leverage our expertise to
   monitor physical assets to ensure long-term maintenance and protection and
-  detect changes in the natural environment, both at home and abroad. At its
-  core, Raster Foundry is an open source tool based on years of research and
-  gives customers the greatest analysis capabilities without sacrificing
-  performance.
+  detect changes in the natural environment, both at home and abroad. 
 about-stats:
   - stat-count: 3
     stat-title: days for model development
@@ -30,42 +27,31 @@ capabilities:
       Our customers upload thousands of images per day. Raster Foundry allows
       them to process remotely sensed data rapidly to create maps and custom
       analysis seamlessly.    
-    capability-title: Imagery management
+    capability-title: Data management
   - capability-icon: far fa-draw-square
     capability-statement: >-
       The biggest obstacle to leveraging machine learning is the absence of
-      training data. Using our  Annotate tool, our clients can label and
-      validate images quickly, and manage large queues of annotation and
-      validation tasks. They can also verify the machine learning models
-      findings to improve performance. No capacity to label data? No problem -
-      our team can do that too.
-    capability-title: Annotation
+      training data. Our clients can label and validate images quickly, manage
+      large queues of annotation and validation tasks, and improve machine
+      learning model findings to improve performance. No capacity to label data?
+      No problem - our team can do that too.
+    capability-title: Training Data Generation
   - capability-icon: far fa-lightbulb-on
     capability-statement: >-
       Using Raster Vision, our open source library for applying computer vision
       and machine learning techniques to Earth observation imagery, Raster
       Foundry can perform object detection, chip classification, semantic and
       instance segmentation operations. 
-    capability-title: Prediction & Discovery
+    capability-title: Custom AI
   - capability-icon: far fa-chart-bar
     capability-statement: >-
       We've built custom internal business process applications for some of our
       larger clients. We serve as trusted consultants and long-term maintainers.
-    capability-title: Business process
-  - capability-icon: far fa-eye
-    capability-statement: >-
-      We've developed this machine learning focused open source library and
-      intend to maintain it in the long-term. As new research problems arise, we
-      aim to update the library with the components necessary to address them,
-      enabling us to remain on the cutting edge of this technology.
-    capability-title: Raster Vision
-  - capability-icon: far fa-sitemap
-    capability-statement: >-
-      The foundation of Raster Foundry is GeoTrellis, Azavea's open source
-      geographic data processing engine for high performance applications.
-    capability-title: Geotrellis
+    capability-title: Seamless business processes
 industries-subtitle: Industries
-industries-title: We're putting our best foot forward with these industries
+industries-title: >-
+  We've helped these industries leverage new technologies and the explosion of
+  available data and imagery
 industries:
   - industry-image: /uploads/rf-cover1.jpg
     industry-image-alt: an image of ag
@@ -100,13 +86,14 @@ clients:
     client-name: United Nations
 testimonials:
   - testimonial: >-
-      Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam
-      accusantium ipsum. Laudantium quia consequatur molestias delectus culpa
-      facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
-      Excepturi nam cupiditate culpa doloremque deleniti repellat.
+      “Azavea built a highly scalable and robust machine learning pipeline that
+      allows us to produce high accuracy, high resolution cropland maps for all
+      of Ghana. Their effort in developing this went far above and beyond what
+      we all initially imagined would be the scope of effort, and is a really
+      critical contribution to our project’s success.”
     testimonial-image: /assets/img/avatars/user-01.jpg
-    testimonial-name: Tim Cook
-    testimonial-position: 'CEO, Apple'
+    testimonial-name: Lyndon Estes
+    testimonial-position: 'Clark University, PhD'
   - testimonial: >-
       Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos
       repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas
