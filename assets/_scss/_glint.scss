@@ -3518,12 +3518,14 @@ footer .row {
 
   .mc-form {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   input[type="email"] {
-    width: 100%;
+    flex: 1;
     height: 5.4rem;
-    padding: 1.2rem 160px 1.2rem 60px;
+    padding: 1.2rem 20px 1.2rem 60px;
     background: url("../img/email-icon.png") 20px center no-repeat,
       rgba(255, 255, 255, 0.1);
     background-size: 24px 16px, auto;
@@ -3554,7 +3556,6 @@ footer .row {
   }
 
   input[type="submit"] {
-    position: absolute;
     top: 0;
     right: 0;
     color: #ffffff;
@@ -3570,10 +3571,22 @@ footer .row {
     font-weight: 400;
     font-size: 1.3rem;
     padding: 0 2rem;
+    flex: none;
+    width: 100%;
   }
 
   i {
     padding-right: 6px;
+  }
+
+  @media (max-width: 720px) {
+    .mc-form {
+      flex-direction: column;
+    }
+
+    input[type="email"] {
+      flex: none;
+    }
   }
 }
 
