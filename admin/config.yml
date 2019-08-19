@@ -49,16 +49,6 @@ collections:
         fields:
           - { label: Hero title, name: hero-title, widget: string }
           - { label: Hero body, name: hero-body, widget: text }
-          - { label: About subtitle, name: about-subtitle, widget: string }
-          - { label: About title, name: about-title, widget: string }
-          - { label: About body, name: about-body, widget: text }
-          - { label: About subtitle, name: about-subtitle, widget: string }
-          - label: "About stats"
-            name: "about-stats"
-            widget: "list"
-            fields:
-              - { label: Stat title, name: stat-title, widget: string }
-              - { label: Stat count, name: stat-count, widget: number }
           - {
               label: Capabilities subtitle,
               name: capabilities-subtitle,
@@ -87,6 +77,12 @@ collections:
                   label: capability statement,
                   name: capability-statement,
                   widget: text,
+                }
+              - {
+                  label: capability image,
+                  name: capability-image,
+                  widget: image,
+                  allow_multiple: false,
                 }
           - {
               label: industries subtitle,
