@@ -55,21 +55,21 @@ industries:
 clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
 clients:
-  - client-logo: /assets/img/clients/apple.png
+  - client-logo: /uploads/the-world-bank.svg
     client-name: World Bank
-  - client-logo: /assets/img/clients/atom.png
+  - client-logo: /uploads/us-army-corps-engineers.svg
     client-name: Army Corps of Engineers
-  - client-logo: /assets/img/clients/blackberry.png
+  - client-logo: /uploads/inter-american-development-bank.svg
     client-name: Inter-American Development Bank
-  - client-logo: /assets/img/clients/dropbox.png
+  - client-logo: /uploads/farmers-edge.svg
     client-name: Farmers Edge
-  - client-logo: /assets/img/clients/envato.png
+  - client-logo: /uploads/philadelphia-water-department.svg
     client-name: Philadelphia Water Department
   - client-logo: /assets/img/clients/firefox.png
     client-name: American Water (?)
-  - client-logo: /assets/img/clients/joomla.png
+  - client-logo: /uploads/the-nature-conservancy.svg
     client-name: The Nature Conservancy
-  - client-logo: /assets/img/clients/magento.png
+  - client-logo: /uploads/united-nations.svg
     client-name: United Nations
 testimonials:
   - testimonial: >-
