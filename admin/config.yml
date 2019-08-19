@@ -23,6 +23,20 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Icon, name: icon, widget: string }
               - { label: Link, name: link, widget: string }
+      - label: "Footer"
+        name: "footer"
+        file: "_data/footer.yml"
+        fields:
+          - { label: Footer subtitle, name: footer-subtitle, widget: string }
+          - { label: Footer title, name: footer-title, widget: string }
+          - { label: Footer grants, name: footer-grants, widget: string }
+          - label: Info columns
+            name: footer-info-columns
+            widget: list
+            allow_add: false
+            fields:
+              - { label: Title, name: info-title, widget: string }
+              - { label: Content, name: info-content, widget: "markdown" }
   - label: "Pages"
     name: "home"
     delete: false

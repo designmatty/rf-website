@@ -12,10 +12,14 @@ thing4: https://scotch.io/tutorials/netlify-dev-the-power-of-netlify-on-your-loc
 
 <!-- home
 ================================================== -->
-<section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="{{ site.baseurl }}/assets/img/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+<section id="home" class="s-home target-section">
 
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
+    <div class="fullscreen-bg">
+        <video class="fullscreen-bg__video" src="/uploads/rf-homepage-view.mp4" autoplay loop
+            poster="/uploads/rf-homepage-video-placeholder.jpg"></video>
+    </div>
 
     <div class="home-content">
 
@@ -24,24 +28,20 @@ thing4: https://scotch.io/tutorials/netlify-dev-the-power-of-netlify-on-your-loc
             <h3>{{ site.data.home.hero-title }}</h3>
 
             <h1>
-              {{ site.data.home.hero-body }}
+                {{ site.data.home.hero-body }}
             </h1>
 
-            <div class="home-content__buttons">
-                <a href="#contact" class="smoothscroll btn btn--stroke">
-                    Start a Project
-                </a>
-                <a href="#about" class="smoothscroll btn btn--stroke">
-                    More About Us
-                </a>
+            <div class="home-content__form">
+                <div class="subscribe-form">
+                    <form id="mc-form-footer" class="group mc-form" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email"
+                            placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
             </div>
 
-        </div>
-
-        <div class="home-content__scroll">
-            <a href="#about" class="scroll-link smoothscroll">
-                <span>Scroll Down</span>
-            </a>
         </div>
 
         <div class="home-content__line"></div>
@@ -50,125 +50,16 @@ thing4: https://scotch.io/tutorials/netlify-dev-the-power-of-netlify-on-your-loc
 
 
     <ul class="home-social">
-        {% for item in site.data.social_media.platform %}  
+        {% for item in site.data.social_media.platform %}
         <li>
-            <a href="{{ item.link }}" title="{{ item.name }}"><i class="{{ item.icon }}" aria-hidden="true"></i><span>{{ item.name }}</span></a>
+            <a href="{{ item.link }}" title="{{ item.name }}"><i class="{{ item.icon }}"
+                    aria-hidden="true"></i><span>{{ item.name }}</span></a>
         </li>
         {% endfor%}
-    </ul> 
+    </ul>
     <!-- end home-social -->
 
 </section> <!-- end s-home -->
-
-
-<!-- about
-================================================== -->
-<section id='about' class="s-about">
-
-    <div class="row section-header has-bottom-sep" data-aos="fade-up">
-        <div class="col-full">
-            <h3 class="subhead subhead--dark">{{ site.data.home.about-subtitle }}</h3>
-            <h1 class="display-1 display-1--light">{{ site.data.home.about-title }}</h1>
-        </div>
-    </div> <!-- end section-header -->
-
-    <div class="row about-desc" data-aos="fade-up">
-        <div class="col-full">
-            <p>{{ site.data.home.about-body }}</p>
-        </div>
-    </div> <!-- end about-desc -->
-
-    <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-        {% for stat in site.data.home.about-stats %}  
-        <div class="col-block stats__col ">
-            <div class="stats__count">{{ stat.stat-count }}</div>
-            <h5>{{ stat.stat-title }}</h5>
-        </div>
-        {% endfor %}
-
-    </div> <!-- end about-stats -->
-
-    <div class="about__line"></div>
-
-</section> <!-- end s-about -->
-
-
-<!-- services
-================================================== -->
-<section id='services' class="s-services">
-
-    <div class="row section-header has-bottom-sep" data-aos="fade-up">
-        <div class="col-full">
-            <h3 class="subhead">{{ site.data.home.capabilities-subtitle }}</h3>
-            <h1 class="display-2">{{ site.data.home.capabilities-title }}</h1>
-        </div>
-    </div> <!-- end section-header -->
-
-    <div class="row services-list block-1-2 block-tab-full">
-
-      {% for item in site.data.home.capabilities %}  
-        <div class="col-block service-item" data-aos="fade-up">
-          <div class="service-icon">
-            <i class="{{ item.capability-icon }}"></i>
-          </div>
-          <div class="service-text">
-            <h3 class="h2">{{ item.capability-title }}</h3>
-            <p>{{ item.capability-statement }}</p>
-          </div>
-        </div>
-      {% endfor %}
-
-    </div> <!-- end services-list -->
-
-</section> <!-- end s-services -->
-
-
-<!-- works
-================================================== -->
-<section id='works' class="s-works">
-
-    <div class="intro-wrap">
-            
-        <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">{{ site.data.home.industries-subtitle }}</h3>
-                <h1 class="display-2 display-2--light">{{ site.data.home.industries-title }}</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-    </div> <!-- end intro-wrap -->
-
-    <div class="row works-content">
-        <div class="col-full masonry-wraps">
-            <div class="masonry">
-              {% for item in site.data.home.industries %}  
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                            
-                        <div class="item-folio__thumb">
-                            <a href="{{ site.baseurl }}{{item.industry-link}}" class="thumb-link" title="{{item.industry-title}}" data-size="1050x700">
-                                <img src="{{item.industry-image}}" alt="{{item.industry-image-alt}}">
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                {{item.industry-title}}
-                            </h3>
-                        </div>
-
-                        <a href="{{ site.baseurl }}{{item.industry-link}}" class="item-folio__project-link" title="Project link">
-                            <i class="far fa-link"></i>
-                        </a>
-
-                    </div>
-                </div>
-                {% endfor %}
-            </div> <!-- end masonry -->
-        </div> <!-- end col-full -->
-    </div> <!-- end works-content -->
-
-</section> <!-- end s-works -->
 
 
 <!-- clients
@@ -177,9 +68,8 @@ thing4: https://scotch.io/tutorials/netlify-dev-the-power-of-netlify-on-your-loc
 
     <div class="row section-header" data-aos="fade-up">
         <div class="col-full">
-            <h3 class="subhead">Our Clients</h3>
-            <h1 class="display-2">Glint has been honored to
-            partner up with these clients</h1>
+            <h3 class="subhead">{{ site.data.home.clients-subtitle }}</h3>
+            <h1 class="display-2">{{ site.data.home.clients-title }}</h1>
         </div>
     </div> <!-- end section-header -->
 
@@ -188,7 +78,7 @@ thing4: https://scotch.io/tutorials/netlify-dev-the-power-of-netlify-on-your-loc
             <div class="clients">
                 {% for item in site.data.home.clients %}
                 <div class="clients__slide">
-                  <img src="{{ item.client-logo }}" alt="{{ item.client-name }}" />
+                    <img src="{{ item.client-logo }}" alt="{{ item.client-name }}" />
                 </div>
                 {% endfor %}
             </div> <!-- end clients -->
@@ -203,141 +93,103 @@ thing4: https://scotch.io/tutorials/netlify-dev-the-power-of-netlify-on-your-loc
 
                     <p>{{ item.testimonial }}</p>
 
-                    <img src="{{ item.testimonial-image }}" alt="{{ item.testimonial-name }}" class="testimonials__avatar">
+                    <img src="{{ item.testimonial-image }}" alt="{{ item.testimonial-name }}"
+                        class="testimonials__avatar">
                     <div class="testimonials__info">
-                        <span class="testimonials__name">{{ item.testimonial-name }}</span> 
+                        <span class="testimonials__name">{{ item.testimonial-name }}</span>
                         <span class="testimonials__pos">{{ item.testimonial-position }}</span>
                     </div>
 
                 </div>
                 {% endfor %}
             </div><!-- end testimonials -->
-            
+
         </div> <!-- end col-full -->
     </div> <!-- end client-testimonials -->
 
 </section> <!-- end s-clients -->
 
 
-<!-- contact
+<!-- works
 ================================================== -->
-<section id="contact" class="s-contact">
+<section id='works' class="s-works">
 
-    <div class="overlay"></div>
-    <div class="contact__line"></div>
+    <div class="intro-wrap">
 
-    <div class="row section-header" data-aos="fade-up">
-        <div class="col-full">
-            <h3 class="subhead">Contact Us</h3>
-            <h1 class="display-2 display-2--light">Reach out to let us know how we can help you</h1>
-        </div>
-    </div>
+        <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">{{ site.data.home.industries-subtitle }}</h3>
+                <h1 class="display-2 display-2--light">{{ site.data.home.industries-title }}</h1>
+            </div>
+        </div> <!-- end section-header -->
 
-    <div class="row contact-content" data-aos="fade-up">
-        
-        <div class="contact-primary">
+    </div> <!-- end intro-wrap -->
 
-            <h3 class="h6">Send Us A Message</h3>
+    <div class="row works-content">
+        <div class="col-full masonry-wraps">
+            <div class="masonry">
+                {% for item in site.data.home.industries %}
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
 
-            <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                <fieldset>
-
-                <div class="form-field">
-                    <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
-                </div>
-                <div class="form-field">
-                    <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
-                </div>
-                <div class="form-field">
-                    <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
-                </div>
-                <div class="form-field">
-                    <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
-                </div>
-                <div class="form-field">
-                    <button class="full-width btn--primary">Submit</button>
-                    <div class="submit-loader">
-                        <div class="text-loader">Sending...</div>
-                        <div class="s-loader">
-                            <div class="bounce1"></div>
-                            <div class="bounce2"></div>
-                            <div class="bounce3"></div>
+                        <div class="item-folio__thumb">
+                            <a href="{{ site.baseurl }}{{item.industry-link}}" class="thumb-link"
+                                title="{{item.industry-title}}" data-size="1050x700">
+                                <img src="{{item.industry-image}}" alt="{{item.industry-image-alt}}">
+                            </a>
                         </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                {{item.industry-title}}
+                            </h3>
+                        </div>
+
+                        <a href="{{ site.baseurl }}{{item.industry-link}}" class="item-folio__project-link"
+                            title="Project link">
+                            <i class="far fa-link"></i>
+                        </a>
+
                     </div>
                 </div>
+                {% endfor %}
+            </div> <!-- end masonry -->
+        </div> <!-- end col-full -->
+    </div> <!-- end works-content -->
 
-                </fieldset>
-            </form>
-
-            <!-- contact-warning -->
-            <div class="message-warning">
-                Something went wrong. Please try again.
-            </div> 
-        
-            <!-- contact-success -->
-            <div class="message-success">
-                Your message was sent, thank you!<br>
-            </div>
-
-        </div> <!-- end contact-primary -->
-
-        <div class="contact-secondary">
-            <div class="contact-info">
-
-                <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
-
-                <div class="cinfo">
-                    <h5>Where to Find Us</h5>
-                    <p>
-                        1600 Amphitheatre Parkway<br>
-                        Mountain View, CA<br>
-                        94043 US
-                    </p>
-                </div>
-
-                <div class="cinfo">
-                    <h5>Email Us At</h5>
-                    <p>
-                        contact@glintsite.com<br>
-                        info@glintsite.com
-                    </p>
-                </div>
-
-                <div class="cinfo">
-                    <h5>Call Us At</h5>
-                    <p>
-                        Phone: (+63) 555 1212<br>
-                        Mobile: (+63) 555 0100<br>
-                        Fax: (+63) 555 0101
-                    </p>
-                </div>
-
-                <ul class="contact-social">
-                    {% for item in site.data.social_media.platform %}  
-                    <li>
-                        <a href="{{ item.link }}" title="{{ item.name }}"><i class="{{ item.icon }}" aria-hidden="true"></i></a>
-                    </li>
-                    {% endfor%}
-                </ul> <!-- end contact-social -->
-
-            </div> <!-- end contact-info -->
-        </div> <!-- end contact-secondary -->
-
-    </div> <!-- end contact-content -->
-
-</section> <!-- end s-contact -->
+</section> <!-- end s-works -->
 
 
-<!-- preloader
+
+<!-- services
 ================================================== -->
-<div id="preloader">
-    <div id="loader">
-        <div class="line-scale-pulse-out">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+<section id='services' class="s-services">
+
+    <div class="row section-header has-bottom-sep" data-aos="fade-up">
+        <div class="col-full">
+            <h3 class="subhead">{{ site.data.home.capabilities-subtitle }}</h3>
+            <h1 class="display-2">{{ site.data.home.capabilities-title }}</h1>
         </div>
+    </div> <!-- end section-header -->
+
+    {% for item in site.data.home.capabilities %}
+    <div class="row services-list {% cycle 'odd', 'even' %}">
+
+        <div class="service-item service-item__copy" data-aos="fade-up">
+            <div class="service-icon">
+                <i class="{{ item.capability-icon }}"></i>
+            </div>
+            <div class="service-text">
+                <h3 class="h2">{{ item.capability-title }}</h3>
+                <p>{{ item.capability-statement }}</p>
+            </div>
+        </div>
+
+        <div class="service-item service-item__image" data-aos="fade-up">
+            <img src="{{ item.capability-image }}" alt="Interface example of {{ item.capability-title }}" />
+        </div>
+
     </div>
-</div>
+    {% endfor %}
+
+</section> <!-- end s-services -->
