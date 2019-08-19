@@ -37,15 +37,15 @@ industries-title: >-
   We've helped these industries leverage new technologies and the explosion of
   available data and imagery
 industries:
-  - industry-image: /uploads/rf-cover1.jpg
+  - industry-image: /uploads/agriculture-card.jpg
     industry-image-alt: an image of ag
     industry-link: '/#'
     industry-title: Agriculture
-  - industry-image: /assets/img/portfolio/woodcraft.jpg
+  - industry-image: /uploads/utility-management-card.jpg
     industry-image-alt: an image of utility management
     industry-link: '/#'
     industry-title: Utility management
-  - industry-image: /assets/img/portfolio/the-beetle.jpg
+  - industry-image: /uploads/international-development-card.jpg
     industry-image-alt: an image of international dev
     industry-link: '/#'
     industry-title: International development
