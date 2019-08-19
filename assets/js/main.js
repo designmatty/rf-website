@@ -355,10 +355,10 @@
    * ------------------------------------------------------ */
   var clAOS = function() {
     AOS.init({
-      offset: 200,
+      offset: 50,
       duration: 600,
       easing: "ease-in-sine",
-      delay: 300,
+      delay: 50,
       once: true,
       disable: "mobile"
     });
@@ -425,7 +425,7 @@
     clMenuOnScrolldown();
     clOffCanvas();
     //clPhotoswipe();
-    clStatCount();
+    //clStatCount();
     //clMasonryFolio();
     clSlickSlider();
     clSmoothScroll();
