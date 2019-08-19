@@ -1,9 +1,7 @@
 hero-title: Welcome to Raster Foundry
-hero-body: >-
-  We help companies <br> extract actionable information<br>from satellite and
-  aerial imagery.
+hero-body: Extracting actionable information from<br>satellite and aerial imagery.
 capabilities-subtitle: What We Do
-capabilities-title: We've got everything you need to manage and analyze your imagery
+capabilities-title: Manage and analyze imagery quickly and easily
 capabilities:
   - capability-icon: far fa-database
     capability-image: /uploads/rf-hub.png
@@ -16,10 +14,9 @@ capabilities:
     capability-image: /uploads/rf-hub.png
     capability-statement: >-
       The biggest obstacle to leveraging machine learning is the absence of
-      training data. Our clients can label and validate images quickly, manage
-      large queues of annotation and validation tasks, and improve machine
-      learning model findings to improve performance. No capacity to label data?
-      No problem - our team can do that too.
+      high-quality training data. Our clients can label and validate images
+      quickly, manage large queues, and improve model performance easily. Or you
+      can leave the work to us. 
     capability-title: Training Data Generation
   - capability-icon: far fa-lightbulb-on
     capability-image: /uploads/rf-hub.png
