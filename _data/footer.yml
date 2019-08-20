@@ -1,18 +1,16 @@
 footer-subtitle: Contact us
 footer-title: Reach out to let us know how we can help you
-footer-grants: Components of the Raster Foundry project have been developed with support from NASA (NNX16CS04C) and The US Dept. of Energy (DE-SC0013134).
+footer-grants: >-
+  Components of the Raster Foundry project have been developed with support from
+  NASA (NNX16CS04C) and The US Dept. of Energy (DE-SC0013134).
 footer-info-columns:
-  - info-title: Where to find us
-    info-content: >-
-      990 Spring Garden<br>
-      5th Floor<br>
-      Philadelphia, PA 19123
-  - info-title: Email us at
-    info-content: >-
-      <a href="mailto:info@rasterfoundry.com">info@rasterfoundry.com</a>
-  - info-title: Privacy & terms
-    info-content: >-
-      © 2016-2019 Azavea.<br>
-      All rights reserved.<br>
-      <a href="https://www.azavea.com/terms-of-use/" target="_blank">Terms of use</a><br>
-      <a href="https://www.azavea.com/privacy-policy/" target="_blank">Privacy policy</a>
+  - info-content: '990 Spring Garden<br> 5th Floor<br> Philadelphia, PA 19123'
+    info-title: Where to find us
+  - info-content: '<a href="mailto:info@rasterfoundry.com">info@rasterfoundry.com</a>'
+    info-title: Email us at
+  - info-content: >-
+      © 2019 Azavea.<br> All rights reserved.<br> <a
+      href="https://www.azavea.com/terms-of-use/" target="_blank">Terms of
+      use</a><br> <a href="https://www.azavea.com/privacy-policy/"
+      target="_blank">Privacy policy</a>
+    info-title: Privacy & terms
