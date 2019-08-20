@@ -52,6 +52,8 @@ industries:
 clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
 clients:
+  - client-logo: /uploads/united-nations.svg
+    client-name: United Nations
   - client-logo: /uploads/the-world-bank.svg
     client-name: World Bank
   - client-logo: /uploads/us-army-corps-engineers.svg
@@ -66,8 +68,6 @@ clients:
     client-name: American Water (?)
   - client-logo: /uploads/the-nature-conservancy.svg
     client-name: The Nature Conservancy
-  - client-logo: /uploads/united-nations.svg
-    client-name: United Nations
 testimonials:
   - testimonial: >-
       “Azavea built a highly scalable and robust machine learning pipeline that
