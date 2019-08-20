@@ -1,56 +1,53 @@
 hero-title: Welcome to Raster Foundry
-hero-body: >-
-  We help companies <br> extract actionable information<br>from satellite and
-  aerial imagery.
+hero-body: Extracting actionable information from satellite and aerial imagery.
 capabilities-subtitle: What We Do
-capabilities-title: We've got everything you need to manage and analyze your imagery
+capabilities-title: Manage and analyze imagery quickly and easily
 capabilities:
   - capability-icon: far fa-database
+    capability-image: /uploads/rf-hub.png
     capability-statement: >-
       Our customers upload thousands of images per day. Raster Foundry allows
       them to process remotely sensed data rapidly to create maps and custom
       analysis seamlessly.
     capability-title: Data management
-    capability-image: /uploads/rf-hub.png
   - capability-icon: far fa-draw-square
+    capability-image: /uploads/rf-hub.png
     capability-statement: >-
       The biggest obstacle to leveraging machine learning is the absence of
-      training data. Our clients can label and validate images quickly, manage
-      large queues of annotation and validation tasks, and improve machine
-      learning model findings to improve performance. No capacity to label data?
-      No problem - our team can do that too.
+      high-quality training data. Our clients can label and validate images
+      quickly, manage large queues, and improve model performance easily. Or you
+      can leave the work to us. 
     capability-title: Training Data Generation
-    capability-image: /uploads/rf-hub.png
   - capability-icon: far fa-lightbulb-on
+    capability-image: /uploads/rf-hub.png
     capability-statement: >-
       Using Raster Vision, our open source library for applying computer vision
       and machine learning techniques to Earth observation imagery, Raster
       Foundry can perform object detection, chip classification, semantic and
       instance segmentation operations.
     capability-title: Custom AI
-    capability-image: /uploads/rf-hub.png
   - capability-icon: far fa-chart-bar
+    capability-image: /uploads/rf-hub.png
     capability-statement: >-
       We've built custom internal business process applications for some of our
       larger clients. We serve as trusted consultants and long-term maintainers.
     capability-title: Seamless business processes
-    capability-image: /uploads/rf-hub.png
 industries-subtitle: Industries
 industries-title: >-
   We've helped these industries leverage new technologies and the explosion of
   available data and imagery
 industries:
-  - industry-image: /uploads/rf-cover1.jpg
+  - industry-image: /uploads/agriculture-card.jpg
     industry-image-alt: an image of ag
-    industry-link: "/#"
+    industry-link: '/#'
     industry-title: Agriculture
-  - industry-image: /assets/img/portfolio/woodcraft.jpg
+  - industry-image: /uploads/utility-management-card.jpg
     industry-image-alt: an image of utility management
-    industry-link: "/#"
+    industry-link: '/#'
     industry-title: Utility management
-  - industry-image: /assets/img/portfolio/the-beetle.jpg
+  - industry-image: /uploads/international-development-card.jpg
     industry-image-alt: an image of international dev
-    industry-link: "/#"
+    industry-link: '/#'
     industry-title: International development
 clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
@@ -78,13 +75,14 @@ testimonials:
       of Ghana. Their effort in developing this went far above and beyond what
       we all initially imagined would be the scope of effort, and is a really
       critical contribution to our project’s success.”
-    testimonial-image: /assets/img/avatars/user-01.jpg
+    testimonial-image: /uploads/lyndon-estes-150x185-clark-university.jpg
     testimonial-name: Lyndon Estes
-    testimonial-position: "Clark University, PhD"
+    testimonial-position: 'Clark University, PhD'
   - testimonial: >-
-      Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos
-      repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas
-      eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
-    testimonial-image: /assets/img/avatars/user-05.jpg
-    testimonial-name: Sundar Pichai
-    testimonial-position: "CEO, Google"
+      "Azavea has been a great partner in developing a web-based decision
+      support tool that presents complex spatial information to water utility
+      technicians in a simple, usable format. Together, we’re helping keep
+      drinking water safe."
+    testimonial-image: /uploads/evan-200x200.jpg
+    testimonial-name: Evan Hansen
+    testimonial-position: 'President, Downstream Strategies'
