@@ -116,25 +116,24 @@ gulp.task("bundle-js", function() {
     .pipe(browserSync.stream());
 });
 
-// run "gulp images" to process images from assets/_src_img to /img folder to be used on the site
+// run "gulp images" to process images from assets/img to /img folder to be used on the site
 gulp.task("images", function() {
   gulp
     .src([
-      "assets/_src_img/**/*.png",
-      "assets/_src_img/**/*.jpg",
-      "assets/_src_img/**/*.gif",
-      "assets/_src_img/**/*.jpeg",
-      "assets/_src_img/**/*.svg"
+      "assets/img/**/*.png",
+      "assets/img/**/*.jpg",
+      "assets/img/**/*.gif",
+      "assets/img/**/*.jpeg",
+      "assets/img/**/*.svg"
     ])
     .pipe(
-      imagemin({
-        interlaced: true,
-        progressive: true,
-        optimizationLevel: 5,
-        svgoPlugins: [{ removeViewBox: true }]
-      })
+      imagemin([
+        imagemin.gifsicle({ interlaced: true }),
+        imagemin.jpegtran({ progressive: true }),
+        imagemin.optipng({ optimizationLevel: 5 })
+      ])
     )
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("assets/img"));
 });
 
 /**
