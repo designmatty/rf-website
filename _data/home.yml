@@ -16,7 +16,7 @@ capabilities:
       The biggest obstacle to leveraging machine learning is the absence of
       high-quality training data. Our clients can label and validate images
       quickly, manage large queues, and improve model performance easily. Or you
-      can leave the work to us. 
+      can leave the work to us.
     capability-title: Training Data Generation
   - capability-icon: far fa-lightbulb-on
     capability-image: /uploads/rf-hub.png
@@ -39,34 +39,32 @@ industries-title: >-
 industries:
   - industry-image: /uploads/agriculture-card.jpg
     industry-image-alt: an image of ag
-    industry-link: '/#'
+    industry-link: "/#"
     industry-title: Agriculture
   - industry-image: /uploads/utility-management-card.jpg
     industry-image-alt: an image of utility management
-    industry-link: '/#'
+    industry-link: "/#"
     industry-title: Utility management
   - industry-image: /uploads/international-development-card.jpg
     industry-image-alt: an image of international dev
-    industry-link: '/#'
+    industry-link: "/#"
     industry-title: International development
 clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
 clients:
-  - client-logo: /uploads/united-nations.svg
+  - client-logo: /uploads/flat-united-nations.svg
     client-name: United Nations
-  - client-logo: /uploads/the-world-bank.svg
+  - client-logo: /uploads/flat-the-world-bank.svg
     client-name: World Bank
-  - client-logo: /uploads/us-army-corps-engineers.svg
+  - client-logo: /uploads/flat-us-army-corps-engineers.svg
     client-name: Army Corps of Engineers
-  - client-logo: /uploads/inter-american-development-bank.svg
+  - client-logo: /uploads/flat-inter-american-development-bank.svg
     client-name: Inter-American Development Bank
-  - client-logo: /uploads/farmers-edge.svg
+  - client-logo: /uploads/flat-farmers-edge.svg
     client-name: Farmers Edge
-  - client-logo: /uploads/philadelphia-water-department.svg
+  - client-logo: /uploads/flat-philadelphia-water-department.svg
     client-name: Philadelphia Water Department
-  - client-logo: /assets/img/clients/firefox.png
-    client-name: American Water (?)
-  - client-logo: /uploads/the-nature-conservancy.svg
+  - client-logo: /uploads/flat-the-nature-conservancy.svg
     client-name: The Nature Conservancy
 testimonials:
   - testimonial: >-
@@ -77,12 +75,12 @@ testimonials:
       critical contribution to our project’s success.”
     testimonial-image: /uploads/lyndon-estes-150x185-clark-university.jpg
     testimonial-name: Lyndon Estes
-    testimonial-position: 'Clark University, PhD'
+    testimonial-position: "Clark University, PhD"
   - testimonial: >-
-      "Azavea has been a great partner in developing a web-based decision
+      “Azavea has been a great partner in developing a web-based decision
       support tool that presents complex spatial information to water utility
       technicians in a simple, usable format. Together, we’re helping keep
-      drinking water safe."
+      drinking water safe.”
     testimonial-image: /uploads/evan-200x200.jpg
     testimonial-name: Evan Hansen
-    testimonial-position: 'President, Downstream Strategies'
+    testimonial-position: "President, Downstream Strategies"
