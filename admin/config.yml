@@ -181,4 +181,4 @@ collections:
                   widget: image,
                   allow_mulitple: false,
                 }
-              - { label: project color, name: project-color, widget: color }
+              - { label: project color, name: project-color, widget: string }
