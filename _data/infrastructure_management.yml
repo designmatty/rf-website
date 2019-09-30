@@ -14,10 +14,10 @@ projects:
   - project-title: Analytics at scale on a project
     project-subtitle: Big geospatial data
     project-image: /uploads/rf-hub.png
-    project-color: null
+    project-color: "#e6ebff"
     project-statement: A collection of tools that enable large scale analysis on satellite imagery.
   - project-title: Detecting water treatment plants
     project-subtitle: Geospatial machine learning
     project-image: /uploads/rf-hub.png
-    project-color: null
+    project-color: "#b6e8e4"
     project-statement: A collection of tools that enable large scale analysis on satellite imagery.
