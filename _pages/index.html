@@ -3,23 +3,20 @@ layout: page
 title: Home
 permalink: /
 ---
-
-
-
 <!-- home
 ================================================== -->
-<section id="home" class="s-home target-section">
+<section id="hero" class="s-hero target-section">
 
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
     <div class="fullscreen-bg">
-        <video class="fullscreen-bg__video" src="/uploads/rf-homepage-view.mp4" autoplay loop muted
+        <video class="fullscreen-bg__element" src="/uploads/rf-homepage-view.mp4" autoplay loop muted
             poster="/uploads/rf-homepage-video-placeholder.jpg"></video>
     </div>
 
-    <div class="home-content">
+    <div class="hero-content">
 
-        <div class="row home-content__main">
+        <div class="row hero-content__main">
 
             <h3>{{ site.data.home.hero-title }}</h3>
 
@@ -27,7 +24,7 @@ permalink: /
                 {{ site.data.home.hero-body }}
             </h1>
 
-            <div class="home-content__form">
+            <div class="hero-content__form">
                 <div class="subscribe-form">
                     <form id="mc-form-footer" class="group mc-form" novalidate="true">
                         <input type="email" value="" name="EMAIL" class="email" id="mc-email"
@@ -40,12 +37,12 @@ permalink: /
 
         </div>
 
-        <div class="home-content__line"></div>
+        <div class="hero-content__line"></div>
 
-    </div> <!-- end home-content -->
+    </div> <!-- end hero-content -->
 
 
-    <ul class="home-social">
+    <ul class="hero-social">
         {% for item in site.data.social_media.platform %}
         <li>
             <a href="{{ item.link }}" title="{{ item.name }}"><i class="{{ item.icon }}"
@@ -53,9 +50,9 @@ permalink: /
         </li>
         {% endfor%}
     </ul>
-    <!-- end home-social -->
+    <!-- end hero-social -->
 
-</section> <!-- end s-home -->
+</section> <!-- end s-hero -->
 
 
 <!-- clients
@@ -129,22 +126,30 @@ permalink: /
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
+                            {% if item.industry-link %}
                             <a href="{{ site.baseurl }}{{item.industry-link}}" class="thumb-link"
                                 title="{{item.industry-title}}" data-size="1050x700">
                                 <img src="{{item.industry-image}}" alt="{{item.industry-image-alt}}">
                             </a>
+                            {% else %}
+                            <img src="{{item.industry-image}}" alt="{{item.industry-image-alt}}">
+                            {% endif %}
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
                                 {{item.industry-title}}
                             </h3>
+                            {% if item.industry-link %}
+                            <span class="item-folio__more">Learn more <i class="far fa-arrow-right"></i></span>
+                            {% endif %}
                         </div>
-
+                        {% if item.industry-link %}
                         <a href="{{ site.baseurl }}{{item.industry-link}}" class="item-folio__project-link"
                             title="Project link">
                             <i class="far fa-link"></i>
                         </a>
+                        {% endif %}
 
                     </div>
                 </div>
@@ -190,16 +195,4 @@ permalink: /
 
 </section> <!-- end s-services -->
 
-<!-- preloader
-================================================== -->
-<div id="preloader">
-    <div id="loader">
-        <div class="line-scale-pulse-out">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-</div>
+{% include preloader.html %}

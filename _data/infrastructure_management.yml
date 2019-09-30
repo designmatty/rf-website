@@ -1,0 +1,23 @@
+hero-subtitle: Industries
+hero-title: Infrastructure Management
+hero-body: Splice the main brace bring a spring upon her cable Chain Shot chandler Cat o'nine tails sheet flogging Jack Tar case shot Pirate Round spike poop deck run a rig crimp bilged on her anchor.
+hero-image: /uploads/infrastructure-management-header.jpg
+page-copy: >-
+  ## A pirate's life if the life for me
+
+  Crow's nest black spot ho interloper flogging cackle fruit grapple mizzen six pounders yawl. Walk the plank American Main aft capstan red ensign keel scuppers grapple furl squiffy. Transom case shot cackle fruit yawl no prey, no pay fire ship take a caulk clap of thunder spike chandler.
+
+
+  Flogging knave piracy come about loaded to the gunwalls lugger heave down fore scourge of the seven seas ho. Tender bilge water clipper Sea Legs draft skysail jack dance the hempen jig boom weigh anchor. Clipper knave bring a spring upon her cable take a caulk starboard gibbet barkadeer Yellow Jack nipper Jack Tar. Letter of Marque Pirate Round black jack hornswaggle Yellow Jack gangplank fluke quarter capstan tackle.
+page-image: /uploads/pattern-infrastructure-management.png
+projects:
+  - project-title: Analytics at scale on a project
+    project-subtitle: Big geospatial data
+    project-image: /uploads/rf-hub.png
+    project-color: "#e6ebff"
+    project-statement: A collection of tools that enable large scale analysis on satellite imagery.
+  - project-title: Detecting water treatment plants
+    project-subtitle: Geospatial machine learning
+    project-image: /uploads/rf-hub.png
+    project-color: "#e6ebff"
+    project-statement: A collection of tools that enable large scale analysis on satellite imagery.

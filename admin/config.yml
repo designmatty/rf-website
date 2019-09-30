@@ -43,7 +43,7 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Home Page"
+      - label: "Home Pages"
         name: "home"
         file: "_data/home.yml"
         fields:
@@ -141,3 +141,44 @@ collections:
                   widget: image,
                   allow_multiple: false,
                 }
+      - label: "Infrastructure Management"
+        name: "infrastructure_management"
+        file: "_data/infrastructure_management.yml"
+        fields:
+          - { label: Hero subtitle, name: hero-subtitle, widget: string }
+          - { label: Hero title, name: hero-title, widget: text }
+          - {
+              label: Hero image,
+              name: hero-image,
+              widget: image,
+              allow_multiple: false,
+            }
+          - { label: Page copy, name: page-copy, widget: markdown }
+          - {
+              label: Page image,
+              name: page-image,
+              widget: image,
+              allow_multiple: false,
+            }
+          - label: "projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: project title, name: project-title, widget: string }
+              - {
+                  label: project subtitle,
+                  name: project-subtitle,
+                  widget: string,
+                }
+              - {
+                  label: project statement,
+                  name: project-statement,
+                  widget: string,
+                }
+              - {
+                  label: project image,
+                  name: project-image,
+                  widget: image,
+                  allow_mulitple: false,
+                }
+              - { label: project color, name: project-color, widget: color }

@@ -1,12 +1,3 @@
-<!-- {% for item in site.data.menu.top %}
-  {% if page.permalink == item.path %}
-    <li class="active"><a href="{{ site.baseurl }}{{item.path}}" class="active">{{item.text}}</a></li>
-  {% else %}
-  <li><a href="{{ site.baseurl }}{{item.path}}">{{item.text}}</a></li>
-  {% endif %}
-{% endfor %} -->
-
-
 <!-- header
 ================================================== -->
 <header class="s-header" id="top">
@@ -19,5 +10,39 @@
       </div>
     </a>
   </div>
+
+  <nav class="header-nav">
+
+    <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+    <div class="header-nav__content">
+      <h3>Navigation</h3>
+
+      <ul class="header-nav__list">
+        <li><a href="/" title="home">Home</a></li>
+        <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+        <li>
+          <h4>Industries</h4>
+        </li>
+        <li><a href="/industry/infrastructure-management" title="contact">Infrastructure management</a></li>
+        <li>more coming soon</li>
+      </ul>
+
+      <ul class="header-nav__social">
+        {% for item in site.data.social_media.platform %}
+        <li>
+          <a href="{{ item.link }}" title="{{ item.name }}"><i class="{{ item.icon }}" aria-hidden="true"></i></a>
+        </li>
+        {% endfor%}
+      </ul>
+
+    </div> <!-- end header-nav__content -->
+
+  </nav> <!-- end header-nav -->
+
+  <a class="header-menu-toggle" href="#0">
+    <span class="header-menu-text">Menu</span>
+    <span class="header-menu-icon"></span>
+  </a>
 
 </header> <!-- end s-header -->

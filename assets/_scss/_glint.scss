@@ -1445,7 +1445,8 @@ input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 800px) {
-  .s-clients {
+  .s-clients,
+  .s-secondary {
     padding-bottom: 17.4rem;
   }
   .section-header.has-bottom-sep::before {
@@ -1568,7 +1569,7 @@ input::-moz-focus-inner {
   line-height: 1.846;
   padding: 3.6rem 3rem 3.6rem 3.6rem;
   height: 100%;
-  width: 280px;
+  width: 340px;
   position: fixed;
   right: 0;
   top: 0;
@@ -1605,6 +1606,17 @@ input::-moz-focus-inner {
   letter-spacing: 0.25rem;
   margin-bottom: 4.8rem;
   margin-top: 0.9rem;
+  color: #5e73cc;
+}
+
+.header-nav h4 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  //letter-spacing: 0.25rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
   color: #5e73cc;
 }
 
@@ -1831,16 +1843,21 @@ input::-moz-focus-inner {
  * # home 
  *
  * ------------------------------------------------------------------- */
-.s-home {
+.s-hero {
   width: 100%;
   height: 100%;
   min-height: 720px;
   background-color: transparent;
   position: relative;
   display: table;
+
+  &.secondary-hero {
+    max-height: 540px;
+    min-height: 540px;
+  }
 }
 
-.s-home .shadow-overlay {
+.s-hero .shadow-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1864,7 +1881,7 @@ input::-moz-focus-inner {
   );
 }
 
-.s-home .overlay {
+.s-hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1874,14 +1891,14 @@ input::-moz-focus-inner {
   background-color: #000000;
 }
 
-.no-js .s-home {
+.no-js .s-hero {
   background: #000000;
 }
 
 /* ------------------------------------------------------------------- 
- * ## home content
+ * ## hero content
  * ------------------------------------------------------------------- */
-.home-content {
+.hero-content {
   display: table-cell;
   width: 100%;
   height: 100%;
@@ -1891,7 +1908,7 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
-.home-content h3 {
+.hero-content h3 {
   font-family: "montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
@@ -1904,7 +1921,7 @@ input::-moz-focus-inner {
   margin-left: 6px;
 }
 
-.home-content h1 {
+.hero-content h1 {
   font-family: "montserrat", sans-serif;
   font-weight: 500;
   font-size: 6.3rem;
@@ -1913,12 +1930,18 @@ input::-moz-focus-inner {
   color: #ffffff;
 }
 
-.home-content__main {
+.hero-content p {
+  font-family: montserrat, sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.hero-content__main {
   padding-top: 24rem;
   position: relative;
 }
 
-.home-content__form {
+.hero-content__form {
   padding-top: 6rem;
   text-align: left;
 
@@ -1927,7 +1950,7 @@ input::-moz-focus-inner {
   }
 }
 
-.home-content__buttons .btn {
+.hero-content__buttons .btn {
   width: 215px;
   border-color: #ffffff;
   color: #ffffff;
@@ -1937,23 +1960,23 @@ input::-moz-focus-inner {
   transition: all 0.5s ease-in-out;
 }
 
-.home-content__buttons .btn:last-child {
+.hero-content__buttons .btn:last-child {
   margin-right: 0;
 }
 
-.home-content__buttons .btn:hover,
-.home-content__buttons .btn:focus {
+.hero-content__buttons .btn:hover,
+.hero-content__buttons .btn:focus {
   background: #ffffff !important;
   color: #000000;
 }
 
-.home-content__scroll {
+.hero-content__scroll {
   position: absolute;
   right: 9.5rem;
   bottom: 8.4rem;
 }
 
-.home-content__scroll a {
+.hero-content__scroll a {
   font-family: "montserrat", sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -1966,7 +1989,7 @@ input::-moz-focus-inner {
   padding-left: 2.5rem;
 }
 
-.home-content__scroll a::before {
+.hero-content__scroll a::before {
   border-bottom: 2px solid #5e73cc;
   border-right: 2px solid #5e73cc;
   content: "";
@@ -1988,7 +2011,7 @@ input::-moz-focus-inner {
   transition: all 0.15s ease-in-out;
 }
 
-.home-content__line {
+.hero-content__line {
   display: block;
   width: 2px;
   height: 10.2rem;
@@ -1999,9 +2022,9 @@ input::-moz-focus-inner {
 }
 
 /* ------------------------------------------------------------------- 
- * ## home social 
+ * ## hero social 
  * ------------------------------------------------------------------- */
-.home-social {
+.hero-social {
   font-family: "montserrat", sans-serif;
   font-weight: 400;
   list-style: none;
@@ -2014,25 +2037,25 @@ input::-moz-focus-inner {
   transform: translate3d(0, -50%, 0);
 }
 
-.home-social a {
+.hero-social a {
   color: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.home-social li {
+.hero-social li {
   position: relative;
   padding: 0.9rem 0;
 }
 
-.home-social li a {
+.hero-social li a {
   display: block;
   width: 33px;
   height: 33px;
 }
 
-.home-social i,
-.home-social span {
+.hero-social i,
+.hero-social span {
   position: absolute;
   top: 0;
   line-height: 33px;
@@ -2040,7 +2063,7 @@ input::-moz-focus-inner {
   transition: all 0.5s ease-in-out;
 }
 
-.home-social i {
+.hero-social i {
   font-size: 14px;
   right: 0;
   text-align: center;
@@ -2052,7 +2075,7 @@ input::-moz-focus-inner {
   border-radius: 50%;
 }
 
-.home-social span {
+.hero-social span {
   color: #5e73cc;
   right: 4.5rem;
   font-size: 1.3rem;
@@ -2067,7 +2090,7 @@ input::-moz-focus-inner {
   white-space: nowrap;
 }
 
-.home-social li:hover span {
+.hero-social li:hover span {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
@@ -2075,24 +2098,24 @@ input::-moz-focus-inner {
   transform: scale(1);
 }
 
-/* animate .home-content__main
+/* animate .hero-content__main
  * ------------------------------------------------------------------- */
-html.cl-preload .home-content__main {
+html.cl-preload .hero-content__main {
   opacity: 0;
 }
 
-html.cl-loaded .home-content__main {
+html.cl-loaded .hero-content__main {
   animation-duration: 2s;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
-html.no-csstransitions .home-content__main {
+html.no-csstransitions .hero-content__main {
   opacity: 1;
 }
 
 /* ------------------------------------------------------------------- 
- * ## home animations
+ * ## hero animations
  * ------------------------------------------------------------------- */
 
 /* fade in */
@@ -2155,34 +2178,40 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * home
+ * hero
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px) {
-  .home-content h1 {
+  .hero-content h1 {
     font-size: 6rem;
   }
-  .home-content__main {
+  .hero-content__main {
     max-width: 1000px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .home-content h1 {
+  .hero-content h1 {
     font-size: 5.5rem;
   }
-  .home-content__main {
+  .hero-content p {
+    font-size: 1.8rem;
+  }
+  .hero-content__main {
     max-width: 800px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .home-content h1 {
+  .hero-content h1 {
     font-size: 4.6rem;
   }
-  .home-content br {
+  .hero-content p {
+    font-size: 1.6rem;
+  }
+  .hero-content br {
     display: none;
   }
-  .home-content__main {
+  .hero-content__main {
     padding-top: 21rem;
     padding-right: 80px;
     max-width: 680px;
@@ -2190,107 +2219,110 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 800px) {
-  .home-content h3 {
+  .hero-content h3 {
     font-size: 1.5rem;
   }
-  .home-content h1 {
+  .hero-content p {
+    font-size: 1.4rem;
+  }
+  .hero-content h1 {
     font-size: 4rem;
   }
-  .home-content__main {
+  .hero-content__main {
     padding-right: 70px;
     max-width: 550px;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .home-content__main {
+  .hero-content__main {
     max-width: 490px;
   }
-  .home-content__buttons {
+  .hero-content__buttons {
     padding-top: 1.2rem;
     text-align: center;
   }
-  .home-content__buttons .btn {
+  .hero-content__buttons .btn {
     display: block;
     width: 70%;
     margin: 1.5rem 0 0 0;
   }
-  .home-social {
+  .hero-social {
     right: 4rem;
   }
-  .home-content__scroll {
+  .hero-content__scroll {
     right: 7.5rem;
   }
-  .home-content__line {
+  .hero-content__line {
     right: 5.5rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .home-content h1 {
+  .hero-content h1 {
     font-size: 3.8rem;
   }
-  .home-social {
+  .hero-social {
     right: 2rem;
   }
-  .home-social li {
+  .hero-social li {
     padding: 0.6rem 0;
   }
-  .home-social i {
+  .hero-social i {
     font-size: 17px;
     border: none;
   }
-  .home-social span {
+  .hero-social span {
     display: none;
   }
-  .home-content__scroll {
+  .hero-content__scroll {
     bottom: 5.4rem;
   }
-  .home-content__line {
+  .hero-content__line {
     height: 7.2rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .s-home {
+  .s-hero {
     min-height: 642px;
   }
-  .home-content h1 {
+  .hero-content h1 {
     font-size: 3.5rem;
   }
-  .home-content__main {
+  .hero-content__main {
     text-align: center;
     max-width: none;
     padding-top: 15rem;
     padding-right: 25px;
     width: 85%;
   }
-  .home-content__buttons {
+  .hero-content__buttons {
     padding-top: 1.2rem;
   }
-  .home-content__buttons .btn {
+  .hero-content__buttons .btn {
     width: auto;
     margin: 1.5rem 0 0 0;
   }
-  .home-social {
+  .hero-social {
     display: none;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .home-content h1 {
+  .hero-content h1 {
     font-size: 3.3rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .s-home {
+  .s-hero {
     min-height: 630px;
   }
-  .home-content h1 {
+  .hero-content h1 {
     font-size: 3.2rem;
   }
-  .home-content__main {
+  .hero-content__main {
     padding-top: 16.2rem;
     width: auto;
   }
@@ -2474,6 +2506,7 @@ html.no-csstransitions .home-content__main {
   background-color: #f4f5f7;
   color: #111;
   position: relative;
+  overflow: hidden;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2482,10 +2515,15 @@ html.no-csstransitions .home-content__main {
 .services-list {
   margin-top: 6rem;
   display: flex;
+  align-items: center;
 
   @media (min-width: 900px) {
     &.odd {
       flex-direction: row-reverse;
+
+      .service-item__image img {
+        margin-left: -30%;
+      }
     }
 
     .service-item__copy {
@@ -2494,6 +2532,10 @@ html.no-csstransitions .home-content__main {
 
     .service-item__image {
       flex: 1;
+
+      img {
+        max-width: 130%;
+      }
     }
   }
 
@@ -2679,7 +2721,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__thumb a::before {
   display: block;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   content: "";
   opacity: 0;
   visibility: hidden;
@@ -2693,7 +2735,7 @@ html.no-csstransitions .home-content__main {
   z-index: 1;
 }
 
-.item-folio__thumb a::after {
+/* .item-folio__thumb a::after {
   content: "+";
   font-family: georgia, serif;
   font-size: 2.7rem;
@@ -2716,7 +2758,7 @@ html.no-csstransitions .home-content__main {
   -ms-transform: scale(0.5);
   transform: scale(0.5);
   z-index: 1;
-}
+} */
 
 .item-folio__text {
   position: absolute;
@@ -2729,6 +2771,8 @@ html.no-csstransitions .home-content__main {
   padding: 1rem 3.3rem 3rem;
   background: linear-gradient(0deg, rgb(17, 17, 17), transparent);
   transition: all 0.3s ease-in-out;
+  user-select: none;
+  pointer-events: none;
 }
 
 .item-folio__title {
@@ -2740,6 +2784,16 @@ html.no-csstransitions .home-content__main {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin: 0 0 0.3rem 0;
+}
+
+.item-folio__more {
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0 0 10px 0;
 }
 
 .item-folio__cat {
@@ -2804,13 +2858,13 @@ html.no-csstransitions .home-content__main {
   visibility: visible;
 }
 
-.item-folio:hover .item-folio__thumb a::after {
+/* .item-folio:hover .item-folio__thumb a::after {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-}
+} */
 
 .item-folio:hover .item-folio__thumb img {
   -webkit-transform: scale(1.05);
@@ -2867,6 +2921,28 @@ html.no-csstransitions .home-content__main {
   padding-bottom: 16.8rem;
   background-color: #e6e6e6;
   color: #757575;
+  position: relative;
+}
+
+/* ===================================================================
+ * # secondary pages
+ *
+ * ------------------------------------------------------------------- */
+.s-secondary {
+  padding-top: 6.2rem;
+  padding-bottom: 16.8rem;
+  background-color: #f4f5f7;
+  color: #111;
+  position: relative;
+
+  .tab-full {
+    position: relative;
+  }
+}
+
+.secondary-projects {
+  margin-top: 7.2rem;
+  padding-top: 7.2rem;
   position: relative;
 }
 
@@ -3038,7 +3114,8 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-  .s-clients {
+  .s-clients,
+  .s-secondary {
     padding-top: 12rem;
   }
   .clients-testimonials::before {
@@ -3737,7 +3814,7 @@ footer .row {
   z-index: -100;
 }
 
-.fullscreen-bg__video {
+.fullscreen-bg__element {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3749,23 +3826,32 @@ footer .row {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  @at-root {
+    img#{&} {
+      max-width: initial;
+      min-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 1280px) {
-  .fullscreen-bg__video {
+  .fullscreen-bg__element {
     height: 780px;
     min-width: fit-content;
   }
 }
 
 @media (max-width: 767px) {
-  .fullscreen-bg {
-    background: url("../../uploads/rf-homepage-video-placeholder.jpg") left
-      center / cover no-repeat;
-  }
+  .s-hero:not(.secondary-hero) {
+    .fullscreen-bg {
+      background: url("../../uploads/rf-homepage-video-placeholder.jpg") left
+        center / cover no-repeat;
+    }
 
-  .fullscreen-bg__video {
-    display: none;
+    .fullscreen-bg__element {
+      display: none;
+    }
   }
 }
 
@@ -3784,6 +3870,132 @@ footer .row {
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
+}
+
+.secondary-content-wrapper {
+  margin-top: -90px;
+  background: white;
+  padding: 3rem;
+  position: relative;
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 1.5rem;
+    color: #5e73cc;
+  }
+}
+
+.secondary-content-imagery {
+  position: relative;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.secondary-grid-image {
+  position: absolute;
+  max-width: 120%;
+  left: -30%;
+  z-index: -1;
+  user-select: none;
+  pointer-events: none;
+  //transform: rotate(-90.1deg);
+}
+
+.secondary-pattern-generic {
+  position: absolute;
+  bottom: -250px;
+  left: -2%;
+  opacity: 1;
+  max-width: 540px;
+  width: 80%;
+  opacity: 0.4;
+  transform: rotate(90deg);
+  z-index: -1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.project {
+  display: flex;
+  background: #fff;
+  margin: 10px 0;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  .project-info {
+    flex-basis: 55%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-category {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1.333;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: #5e73cc;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .project-title {
+    margin-top: 1rem;
+  }
+
+  .project-overview {
+    margin-bottom: 0;
+  }
+
+  .project-image-container {
+    flex: 1;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: #ffffff;
+      width: 10rem;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      transform: skew(15deg);
+      transform-origin: bottom left;
+      z-index: 2;
+    }
+
+    @media (max-width: 800px) {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .project-image {
+    position: relative;
+    z-index: 10;
+    padding: 3rem;
+
+    @media (max-width: 800px) {
+      max-width: 400px;
+      margin: auto;
+    }
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
