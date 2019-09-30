@@ -1,0 +1,48 @@
+---
+layout: page
+title: Infrastructure Management
+permalink: /industry/infrastructure-management/
+---
+{% capture data_pageID %}infrastructure_management{% endcapture %}
+
+
+{% include hero.html %}
+
+<!-- prettier-ignore -->
+<section class="s-secondary" id="content">
+  <div class="row" data-aos="fade-up">
+    <div class="col-seven tab-full">
+      <div class="secondary-content-wrapper">
+        {{ site.data.infrastructure_management.page-copy | markdownify}}
+      </div>
+    </div>
+    <div class="col-four tab-full">
+      <div class="secondary-content-imagery">
+        <img src="{{ site.data.infrastructure_management.page-image }}" alt="stylized pattern, pure visual aesthetic"
+          aria-hidden="true" class="secondary-grid-image">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row secondary-projects" data-aos="fade-up">
+    {% for item in site.data.infrastructure_management.projects %}
+    <div class="col-full">
+      <div class="project">
+        <div class="project-info">
+          <p class="project-category">{{ item.project-subtitle }}</p>
+          <h2 class="h3 project-title">{{ item.project-title }}</h2>
+          <p class="project-overview">{{ item.project-statement }}</p>
+        </div>
+        <div class="project-image-container" style="background: {{ item.project-color }}">
+          <div class="project-image">
+            <img src="{{ item.project-image }}" alt="A preview of {{ item.project-title }}">
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <img src="/uploads/pattern-generic.png" alt="stylized pattern, pure visual aesthetic" aria-hidden="true"
+      class="secondary-pattern-generic">
+  </div>
+</section>
+{% include preloader.html %}

@@ -1,0 +1,40 @@
+<section id="hero" class="s-hero target-section secondary-hero">
+
+  <div class="overlay"></div>
+  <div class="shadow-overlay"></div>
+  <div class="fullscreen-bg">
+    <img class="fullscreen-bg__element" src="{{ site.data.[data_pageID].hero-image }}" alt="">
+  </div>
+
+  <div class="hero-content">
+
+    <div class="row hero-content__main">
+
+      <h3>{{ site.data.[data_pageID].hero-subtitle }}</h3>
+
+      <h1>
+        {{ site.data.[data_pageID].hero-title }}
+      </h1>
+
+      <p>
+        {{ site.data.[data_pageID].hero-body }}
+      </p>
+
+    </div>
+
+    <div class="hero-content__line"></div>
+
+  </div> <!-- end hero-content -->
+
+
+  <ul class="hero-social">
+    {% for item in site.data.social_media.platform %}
+    <li>
+      <a href="{{ item.link }}" title="{{ item.name }}"><i class="{{ item.icon }}"
+          aria-hidden="true"></i><span>{{ item.name }}</span></a>
+    </li>
+    {% endfor%}
+  </ul>
+  <!-- end hero-social -->
+
+</section> <!-- end s-hero -->

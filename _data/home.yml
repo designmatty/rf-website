@@ -39,15 +39,15 @@ industries-title: >-
 industries:
   - industry-image: /uploads/agriculture-card.jpg
     industry-image-alt: an image of ag
-    industry-link: "/#"
+    industry-link: false
     industry-title: Agriculture
-  - industry-image: /uploads/utility-management-card.jpg
-    industry-image-alt: an image of utility management
-    industry-link: "/#"
-    industry-title: Utility management
+  - industry-image: /uploads/infrastructure-management-card.jpg
+    industry-image-alt: an image of Infrastructure management
+    industry-link: /industry/infrastructure-management/
+    industry-title: Infrastructure management
   - industry-image: /uploads/international-development-card.jpg
     industry-image-alt: an image of international dev
-    industry-link: "/#"
+    industry-link: false
     industry-title: International development
 clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
