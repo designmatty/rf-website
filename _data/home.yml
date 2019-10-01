@@ -11,7 +11,7 @@ capabilities:
       analysis seamlessly.
     capability-title: Data management
   - capability-icon: far fa-draw-square
-    capability-image: /uploads/rf-hub.png
+    capability-image: /uploads/rf-annotate.png
     capability-statement: >-
       The biggest obstacle to leveraging machine learning is the absence of
       high-quality training data. Our clients can label and validate images
@@ -19,7 +19,7 @@ capabilities:
       can leave the work to us.
     capability-title: Training Data Generation
   - capability-icon: far fa-lightbulb-on
-    capability-image: /uploads/rf-hub.png
+    capability-image: /uploads/rf-vision.png
     capability-statement: >-
       Using Raster Vision, our open source library for applying computer vision
       and machine learning techniques to Earth observation imagery, Raster
@@ -27,7 +27,7 @@ capabilities:
       instance segmentation operations.
     capability-title: Custom AI
   - capability-icon: far fa-chart-bar
-    capability-image: /uploads/rf-hub.png
+    capability-image: /uploads/rf-business-process.png
     capability-statement: >-
       We've built custom internal business process applications for some of our
       larger clients. We serve as trusted consultants and long-term maintainers.
