@@ -71,7 +71,7 @@ testimonials:
       of Ghana. Their effort in developing this went far above and beyond what
       we all initially imagined would be the scope of effort, and is a really
       critical contribution to our project’s success.”
-    testimonial-image: /uploads/lyndon-estes-150x185-clark-university.jpg
+    testimonial-image: /uploads/lyndon-estes-clark-university.png
     testimonial-name: Lyndon Estes
     testimonial-position: 'Clark University, PhD'
   - testimonial: >-
@@ -79,6 +79,6 @@ testimonials:
       support tool that presents complex spatial information to water utility
       technicians in a simple, usable format. Together, we’re helping keep
       drinking water safe.”
-    testimonial-image: /uploads/evan-200x200.jpg
+    testimonial-image: /uploads/evan-hansen-downstream-strategies.png
     testimonial-name: Evan Hansen
     testimonial-position: 'President, Downstream Strategies'
