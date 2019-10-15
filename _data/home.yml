@@ -60,8 +60,6 @@ clients:
     client-name: Army Corps of Engineers
   - client-logo: /uploads/flat-inter-american-development-bank.svg
     client-name: Inter-American Development Bank
-  - client-logo: /uploads/flat-farmers-edge.svg
-    client-name: Farmers Edge
   - client-logo: /uploads/flat-philadelphia-water-department.svg
     client-name: Philadelphia Water Department
   - client-logo: /uploads/flat-the-nature-conservancy.svg
@@ -73,14 +71,14 @@ testimonials:
       of Ghana. Their effort in developing this went far above and beyond what
       we all initially imagined would be the scope of effort, and is a really
       critical contribution to our project’s success.”
-    testimonial-image: /uploads/lyndon-estes-150x185-clark-university.jpg
+    testimonial-image: /uploads/lyndon-estes-clark-university.png
     testimonial-name: Lyndon Estes
-    testimonial-position: "Clark University, PhD"
+    testimonial-position: 'Clark University, PhD'
   - testimonial: >-
       “Azavea has been a great partner in developing a web-based decision
       support tool that presents complex spatial information to water utility
       technicians in a simple, usable format. Together, we’re helping keep
       drinking water safe.”
-    testimonial-image: /uploads/evan-200x200.jpg
+    testimonial-image: /uploads/evan-hansen-downstream-strategies.png
     testimonial-name: Evan Hansen
-    testimonial-position: "President, Downstream Strategies"
+    testimonial-position: 'President, Downstream Strategies'
