@@ -1,17 +1,20 @@
 footer-subtitle: Contact us
 footer-title: Reach out to let us know how we can help you
-footer-grants: >-
-  Raster Foundry is a product of Azavea<br>
-  Components of the Raster Foundry project have been developed with support from
-  NASA (NNX16CS04C) and The US Dept. of Energy (DE-SC0013134).
-footer-info-columns:
-  - info-content: "990 Spring Garden<br> 5th Floor<br> Philadelphia, PA 19123"
-    info-title: Where to find us
-  - info-content: '<a href="mailto:info@rasterfoundry.com">info@rasterfoundry.com</a>'
-    info-title: Email us at
-  - info-content: >-
-      © 2019 Azavea.<br> All rights reserved.<br> <a
-      href="https://www.azavea.com/terms-of-use/" target="_blank">Terms of
-      use</a><br> <a href="https://www.azavea.com/privacy-policy/"
-      target="_blank">Privacy policy</a>
-    info-title: Privacy & terms
+location: "990 Spring Garden<br> 5th Floor<br> Philadelphia, PA 19123"
+contact-link: '<a href="mailto:info@rasterfoundry.com">info@rasterfoundry.com</a>'
+company-title: Company
+company-links:
+  - link: '<a href="https://www.azavea.com/about">About</a>'
+  - link: '<a href="https://www.azavea.com/work">What we do</a>'
+  - link: '<a href="https://www.azavea.com/research">Research</a>'
+  - link: '<a href="https://careers.azavea.com">Careers</a>'
+  - link: '<a href="https://www.azavea.com/blog">Blog</a>'
+  - link: '<a href="https://www.azavea.com/press">Press</a>'
+services-title: Services
+services-links:
+  - link: '<a href="https://www.azavea.com/services/software-engineering/">Software Engineering</a>'
+  - link: '<a href="https://www.azavea.com/services/data-analytics/">Data Analytics</a>'
+  - link: '<a href="https://www.azavea.com/services/ux-design/">User Experience Design</a>'
+  - link: '<a href="https://www.azavea.com/services/big-data-processing/">Big Data Processing</a>'
+  - link: '<a href="https://www.azavea.com/services/machine-learning-and-computer-vision/">Machine Learning</a>'
+  - link: '<a href="https://www.azavea.com/services/research-and-development/">R&D</a>'

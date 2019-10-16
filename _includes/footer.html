@@ -26,12 +26,33 @@
             </div>
             <div class="contact-info">
 
-                {% for item in site.data.footer.footer-info-columns %}
                 <div class="cinfo">
-                    <h5>{{ item.info-title }}</h5>
-                    <p>{{ item.info-content }}</p>
+                    <img class="footer-logo" src="{{ site.baseurl }}/uploads/azavea_white_solo.svg" alt="Azavea Logo">
+                    <p>{{ site.data.footer.location }}</p>
+                    <p>{{ site.data.footer.contact-link }}</p>
                 </div>
-                {% endfor%}
+
+                <div class="cinfo">
+                    <h5>{{ site.data.footer.company-title }}</h5>
+                    <ul>
+                        {% for item in site.data.footer.company-links %}
+                        <li>
+                            {{item.link}}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="cinfo">
+                    <h5>{{ site.data.footer.services-title }}</h5>
+                    <ul>
+                        {% for item in site.data.footer.services-links %}
+                        <li>
+                            {{item.link}}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
 
                 <ul class="contact-social">
                     {% for item in site.data.social_media.platform %}
@@ -42,8 +63,16 @@
                     {% endfor%}
                 </ul> <!-- end contact-social -->
 
-            </div> <!-- end contact-info -->
-            <p class="footer-content">{{ site.data.footer.footer-grants }}</p>
+            </div>
+            <p class="footer-content">
+                Raster Foundry is a product of Azavea. © {{ 'now' | date: "%Y" }} Azavea. All rights reserved.
+                <br>
+                <a href="https://www.azavea.com/terms-of-use/">Terms of use</a> |
+                <a href="https://www.azavea.com/privacy-policy/">Privacy policy</a>
+                <br>
+                Components of the Raster Foundry project have been developed with support from
+                NASA (NNX16CS04C) and The US Dept. of Energy (DE-SC0013134).
+            </p>
         </div> <!-- end contact-secondary -->
 
     </div> <!-- end contact-content -->
@@ -53,3 +82,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vendor/plugins.js"></script>
 <script src="{{ site.baseurl }}/assets/js/bundle.js"></script>
+<script>
+    window.intercomSettings = {
+        app_id: "txwuxlol"
+    };
+</script>
+<script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/txwuxlol'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();</script>
