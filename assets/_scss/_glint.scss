@@ -3328,6 +3328,11 @@ html.no-csstransitions .hero-content__main {
   a {
     color: white;
   }
+
+  ul {
+    margin: 0 0 1rem;
+    list-style-type: none;
+  }
 }
 
 .contact-social {
@@ -3593,9 +3598,9 @@ footer .row {
   display: block;
   padding: 0;
   outline: 0;
+  margin-bottom: 10px;
   border: none;
   width: 105px;
-  margin: auto;
 }
 
 .subscribe-form {
@@ -3763,6 +3768,10 @@ footer .row {
   .footer-main .right {
     padding-left: 15px;
   }
+
+  .footer-logo {
+    margin: -0.6rem auto 3.6rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -3771,9 +3780,6 @@ footer .row {
   }
   .footer-main .right {
     padding-left: 10px;
-  }
-  .footer-logo {
-    margin: -0.6rem auto 3.6rem;
   }
   .footer-bottom {
     padding-bottom: 0.6rem;
@@ -3868,9 +3874,13 @@ footer .row {
 
 .footer-content {
   max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  font-size: 14px;
+  margin: 3rem auto 0;
+
+  a {
+    color: #fff;
+  }
 }
 
 .product-of-azavea {
@@ -3890,15 +3900,20 @@ footer .row {
   position: relative;
 
   .h1,
+  h1 {
+    margin-top: 1.5rem;
+    color: #5e73cc;
+  }
+
   .h2,
   .h3,
   .h4,
-  h1,
   h2,
   h3,
   h4 {
     margin-top: 1.5rem;
-    color: #5e73cc;
+    margin-bottom: 1.5rem;
+    color: #111;
   }
 }
 
@@ -3961,6 +3976,8 @@ footer .row {
     color: #5e73cc;
     margin-top: 0;
     margin-bottom: 0;
+    position: relative;
+    z-index: 10;
   }
 
   .project-title {
@@ -3974,13 +3991,15 @@ footer .row {
   .project-image-container {
     flex: 1;
     position: relative;
+    display: flex;
+    align-items: center;
 
     &:before {
       content: "";
       display: block;
       position: absolute;
       background: #ffffff;
-      width: 10rem;
+      width: 12rem;
       height: 100%;
       top: 0;
       bottom: 0;
@@ -4000,7 +4019,7 @@ footer .row {
   .project-image {
     position: relative;
     z-index: 10;
-    padding: 3rem;
+    padding: 3rem 3rem 1rem;
 
     @media (max-width: 800px) {
       max-width: 400px;

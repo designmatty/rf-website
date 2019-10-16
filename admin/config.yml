@@ -29,14 +29,26 @@ collections:
         fields:
           - { label: Footer subtitle, name: footer-subtitle, widget: string }
           - { label: Footer title, name: footer-title, widget: string }
-          - { label: Footer grants, name: footer-grants, widget: string }
-          - label: Info columns
-            name: footer-info-columns
+          - { label: Footer location, name: location, widget: string }
+          - { label: Footer contact, name: contact-link, widget: string }
+          - { label: Footer company label, name: company-title, widget: string }
+          - label: Company links
+            name: company-links
             widget: list
-            allow_add: false
+            allow_add: true
             fields:
-              - { label: Title, name: info-title, widget: string }
-              - { label: Content, name: info-content, widget: "markdown" }
+              - { label: Link, name: link, widget: string }
+          - {
+              label: Footer services label,
+              name: services-title,
+              widget: string,
+            }
+          - label: Services links
+            name: services-links
+            widget: list
+            allow_add: true
+            fields:
+              - { label: Link, name: link, widget: string }
   - label: "Pages"
     name: "home"
     delete: false
