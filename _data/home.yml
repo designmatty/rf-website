@@ -52,8 +52,6 @@ industries:
 clients-subtitle: Our clients
 clients-title: We have been honored to partner with these clients
 clients:
-  - client-logo: /uploads/flat-united-nations.svg
-    client-name: United Nations
   - client-logo: /uploads/flat-the-world-bank.svg
     client-name: World Bank
   - client-logo: /uploads/flat-us-army-corps-engineers.svg
