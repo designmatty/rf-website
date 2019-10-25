@@ -4,7 +4,7 @@ hero-image: /uploads/infrastructure-management-header.jpg
 page-copy: "# Cost effective asset monitoring\n\nReduce risk by monitoring your assets on a consistent basis with drone and satellite imagery, and catch problems before they become costly and dangerous. \r\n\n### Data is Transforming the Infrastructure Management Industry\r\n\nOver the past decade, the rise of commercial drone technology and proliferation of affordable satellite imagery has enabled a new paradigm of quantitative monitoring and assessment of valuable infrastructure at scale.\r\n\nWhether you are working to prevent third-party construction activity along thousands of miles of pipeline right of way or trying to quantify the structural integrity of a single bridge, drone and satellite data is an invaluable resource for modern infrastructure managers. By combining imagery with advanced machine learning techniques, industry leaders are now able to get a more complete picture of the condition of their assets than ever before. Having timely, quantitative data about assets enables better decision-making when it comes to allocating resources and reducing risk across the entire enterprise."
 page-image: /uploads/pattern-infrastructure-management.png
 projects:
-  - project-color: "#f7cac0"
+  - project-color: '#f7cac0'
     project-image: /uploads/monitoring-app.png
     project-statement: >-
       We partnered with a leading satellite imagery provider to develop change
@@ -12,12 +12,12 @@ projects:
       cleanup efforts along pipeline right of way.
     project-subtitle: Detecting Spills and Activity Along Pipeline Right of Way
     project-title: Remote Monitoring of Assets
-  - project-color: "#d4dfff"
+  - project-color: '#d4dfff'
     project-image: /uploads/water-utility.png
     project-statement: >-
       We worked with one of the largest public water utilities in the world to
       leverage drone imagery and artificial intelligence to identify and measure
       rust on their inventory of above ground storage tanks and subsequently
       prioritize which of their thousands of tanks needed to be recoated first.
-    project-subtitle: Quantifying Rust on Above Ground Storage Tanks
+    project-subtitle: Quantifying Rust on Above Ground Storage Tanks.
     project-title: Artificial Intelligence for Asset Inspection
