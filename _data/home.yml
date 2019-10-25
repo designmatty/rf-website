@@ -35,7 +35,7 @@ capabilities:
 industries-subtitle: Industries
 industries-title: >-
   We've helped these industries leverage new technologies and the explosion of
-  available data and imagery
+  available data and imagery.
 industries:
   - industry-image: /uploads/agriculture-card.jpg
     industry-image-alt: an image of ag
